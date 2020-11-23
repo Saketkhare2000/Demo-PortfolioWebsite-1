@@ -1,0 +1,242 @@
+/*======================TWO=================*/
+.two {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*_________________________________CAROUSEL CSS_________________________________--*/
+.carousel-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 0em;
+    margin: 0em;
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel-container .partA {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 35vw;
+    padding: 0em;
+    margin: 0em;
+}
+
+.carousel-container .partA .one {
+    background-image: url("pics/pic1.png");
+    width: 100%;
+    height: 50vh;
+
+}
+
+.carousel-container .partA .one2 {
+    background-image: url("pics/pic2.png");
+    width: 100%;
+    height: 50vh;
+
+}
+
+.carousel-container .partA .one3 {
+    background-image: url("pics/pic3.png");
+    width: 100%;
+    height: 50vh;
+}
+
+
+
+.carousel-container .partA .two {
+    background: whitesmoke;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-container .partA .two .text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+}
+
+.carousel-container .partA .two .text h2 {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 37px;
+    text-align: left;
+    color: #2C2C2C;
+}
+
+.carousel-container .partA .two .text p {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #868686;
+    padding-top: 15px;
+}
+
+.carousel-container .partB {
+    width: 70vw;
+    height: 100vh;
+    background-color: #2C2C2C;
+    float: right;
+    display: flex;
+}
+
+.carousel-container .partB h1 {
+    font-family: 'Poller One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5vw;
+    line-height: 6vh;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+/*______________CONTROL BTN________________---*/
+.carousel-control-next {
+    height: 100px;
+    width: 150px;
+    margin-top: auto;
+    margin-bottom: 7px;
+    margin-right: 20px;
+}
+
+.carousel-control-next h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 37px;
+    text-align: center;
+    color: #C6C6C6;
+    padding: 5px 10px 0px 0px;
+}
+.carousel-control-next .iconify{
+    color: #E3C567;
+    font-size: 37px;
+}
+
+/*______________________________//..CAROUSEL CSS_________________________________--*/
+/*___________________________Media Queries____________________________________-*/
+@media only screen and (max-width:970px) {
+
+    .carousel-container .partA {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 50vw;
+        padding: 0em;
+        margin: 0em;
+    }
+
+    .carousel-container .partB {
+        width: 50vw;
+        height: 100vh;
+        background-color: #2C2C2C;
+        float: right;
+        display: flex;
+    }
+
+}
+
+@media only screen and (max-width:700px) {
+    .carousel-container {
+        width: 100vw;
+        height: 100vh;
+        padding: 0em;
+        margin: 0em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-container .partA {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        padding: 0em;
+        margin: 0em;
+    }
+
+    .carousel-container .partA .two {
+        background: whitesmoke;
+        height: 50vh;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel-container .partB {
+        width: 50vw;
+        height: 50vh;
+        background-color: #2C2C2C;
+        float: right;
+        display: flex;
+        position: absolute;
+        align-self: flex-end;
+        justify-self: flex-end;
+        margin-top: 50vh;
+        
+    }
+
+    .carousel-container .partA .two .text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .carousel-container .partA .two .text h2 {
+        font-family: 'Montserrat', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 37px;
+        text-align: left;
+        color: #2C2C2C;
+    }
+
+    .carousel-container .partA .two .text p {
+        font-family: 'Montserrat', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 22px;
+        color: #868686;
+        padding-top: 3px;
+    }
+    .carousel-control-next {
+        height: 50px;
+        width: 80px;
+        margin-top: auto;
+        margin-bottom: 7px;
+        margin-right: 10px;
+    }
+    .carousel-control-next h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 37px;
+        text-align: center;
+        color: #C6C6C6;
+        padding: 10px 0px 0px 0px;
+    }
+    .carousel-control-next .iconify{
+        color: #E3C567;
+        font-size: 26px !important;
+    }
+}
+/*_____________________________//...Media Queries____________________________________-*/
