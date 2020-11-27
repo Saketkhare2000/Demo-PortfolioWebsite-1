@@ -48,7 +48,7 @@
 
 body {
     overflow: hidden;
-    cursor: none;
+    cursor: pointer;
     margin: 0;
     font-family: "Limelight", sans-serif;
     text-rendering: optimizeLegibility;
@@ -79,7 +79,7 @@ body {
     box-sizing: border-box;
     color: hsla(0, 0%, 100%, .1);
     cursor: default;
-    cursor: none;
+    cursor: default;
 }
 
 .panel:nth-child(1) {
