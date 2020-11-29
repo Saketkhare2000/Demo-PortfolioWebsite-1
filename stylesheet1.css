@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /*============ CURSOR CSS============*/
-
-.cursor {
-  width: 3rem;
-  height: 3rem;
+/* .cursor {
+  width: 1rem;
+  height: 1rem;
+  z-index: 999 !important;
+  background-color: rgba(255, 255, 255, 0.685);
   border: 2px solid white;
   border-radius: 50%;
   position: absolute;
@@ -11,12 +17,12 @@
   transition: all 0.5s ease-in-out;
   transition-property: background, transform;
   transform-origin: 75% 75%;
-}
+} */
 
 /*______________________________________________________FullpageCSS_________________________________________________________________*/
 
 body {
-  overflow: hidden;
+  /* overflow-x: hidden; */
   margin: 0;
   font-family: 'Limelight', sans-serif;
   text-rendering: optimizeLegibility;
@@ -25,8 +31,8 @@ body {
 
 .well {
   position: relative;
-  overflow: hidden;
-  transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+  /* overflow: hidden; */
+  /* transition: 1s cubic-bezier(0.5, 0, 0.5, 1); */
 }
 
 .top {
@@ -40,9 +46,9 @@ body {
 .panel {
   position: relative;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-size: 10vmin;
-  padding: 1em;
+  /* padding: 1em; */
   box-sizing: border-box;
   color: hsla(0, 0%, 100%, 0.1);
 }
@@ -70,6 +76,9 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-position: 50% 50%;
+  }
+  .cursor {
+    display: none;
   }
 }
 
@@ -105,13 +114,18 @@ body {
 }
 
 /*__________________________First scroll_____________________________________*/
-
+/* .one {
+  position: relative;
+} */
 .name {
-  left: 15vw;
-  top: 35vh;
-  width: 34vw;
-  height: 27vh;
-  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
 }
 
 .name h1 {
@@ -125,7 +139,7 @@ body {
   width: 34vw;
   height: 24vh;
   left: 15vw;
-  top: 35vh;
+  top: 50%;
 }
 
 @media only screen and (max-width: 1190px) {
@@ -237,14 +251,14 @@ body {
 
 .navigation ul li a:hover {
   transform: scale(1.2);
-  transition: 1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 /*____________BUTTON____________*/
 .menu {
-  width: 3vw;
-  margin-top: 44vh;
-  margin-bottom: 26vh;
+  display: flex;
+  position: absolute;
+  top: 30%;
 }
 
 .menu button {
@@ -547,7 +561,7 @@ h1:before {
   left: 0;
   width: 0%;
   overflow: hidden;
-  transition: 2s;
+  transition: 1s;
   -webkit-text-stroke: 0px !important;
 }
 
@@ -650,7 +664,7 @@ h1:hover:before {
 
 .card-body .img {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-  transition: 1s ease;
+  transition: 0.3s ease;
   position: relative;
   height: 253px !important;
   width: 250px !important;
@@ -659,7 +673,7 @@ h1:hover:before {
 
 .four img:hover {
   transform: scale(1.2);
-  transition: 1s ease;
+  transition: 0.3s ease;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1305,8 +1319,11 @@ hr {
 }
 
 .bottomcontent .left .socialicons {
-  float: right;
-  justify-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* float: right;
+  justify-self: flex-end; */
   margin: auto 0px 0px auto;
   height: 10vh;
   width: fit-content;
@@ -1500,6 +1517,162 @@ hr {
     line-height: 20px;
   }
 }
+
+/* about section css  */
+.about-me {
+  background: #2c2c2c;
+  padding: 1rem 0rem;
+}
+.frame {
+  height: 90vh;
+  border-radius: 3px;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  margin: 0rem 3rem;
+  margin-bottom: 1rem;
+}
+.heading {
+  position: relative;
+  text-align: center;
+}
+.grad-img {
+  height: 100%;
+  width: 100%;
+  padding: 0rem 1rem;
+}
+.heading h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.3rem;
+  color: #2c2c2c;
+}
+.line {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #28afb0;
+}
+.card-text {
+  padding: 1rem 0rem;
+}
+.card-btn {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  height: 40px;
+  width: 100%;
+  background: #28afb0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.card-btn:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  color: black;
+  font-weight: bold;
+}
+.card-text {
+  color: #2c2c2c;
+  line-height: 18px;
+}
+
+@media all and (min-width: 650px) {
+  .grad-img {
+    height: 100%;
+    width: 100px;
+  }
+  .card-text {
+    font-size: 1.5em;
+  }
+}
+@media all and (min-width: 576px) {
+  .about-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .about-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .frame {
+    height: 70vh;
+    flex-direction: row;
+    padding: 3rem;
+    position: relative;
+  }
+  .card-text {
+    text-align: left;
+    width: 70%;
+  }
+  .grad-img {
+    /* float: rigth; */
+    height: 100%;
+    width: 200px;
+  }
+  .card-btn {
+    width: 30%;
+    position: absolute;
+    left: 50px;
+    bottom: 13%;
+  }
+  .heading h1 {
+    font-size: 3em;
+    text-align: left;
+  }
+  .line {
+    font-size: 2.5em;
+    text-align: left;
+  }
+  /* .line::before{
+      position: absolute;
+      content: '';
+      margin-about-.about-left: 1rem;
+      width: 10%;
+      background: #2c2c2c ;
+      height: 2px;
+      top: 75%;
+      about-.about-left: 0;
+  } */
+  /* .before-line {
+    position: absolute;
+    top: 70%;
+    display: block;
+    width: 10%;
+    height: 0.2rem;
+    background: #2c2c2c;
+  } */
+}
+@media all and (min-width: 800px) {
+  .grad-img {
+    height: 100%;
+    width: 300px;
+  }
+  .card-text {
+    font-size: 1em;
+  }
+}
+@media all and (min-width: 1050px) {
+  .grad-img {
+    height: 100%;
+    width: 400px;
+  }
+}
+
+/* about section css ends here  */
 
 /*============================================
                          /.CONTACT PAGE

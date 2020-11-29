@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #2C2C2C;
+}
+.frame {
+  /* height: 90vh; */
+  border-radius: 3px;
+  background: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  margin: 3rem 3rem;
+}
+.heading {
+  position: relative;
+  text-align: center;
+}
+.grad-img {
+  height: 100%;
+  width: 100%;
+  padding: 0rem 1rem;
+}
+.heading h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.3rem;
+  color: #2c2c2c;
+}
+.line {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #28afb0;
+}
+.card-text {
+  padding: 1rem 0rem;
+}
+.card-btn {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  height: 40px;
+  width: 100%;
+  background: #28afb0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.card-btn:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  color: black;
+  font-weight: bold;
+}
+.card-text {
+  color: #2c2c2c;
+  line-height: 18px;
+}
+
+@media all and (min-width: 650px) {
+  .grad-img {
+    height: 100%;
+    width: 100px;
+  }
+  .card-text {
+    font-size: 1.5em;
+  }
+}
+@media all and (min-width: 576px) {
+  .about-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .about-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .frame {
+    height: 70vh;
+    flex-direction: row;
+    padding: 3rem;
+    position: relative;
+  }
+  .card-text {
+    text-align: left;
+    width: 70%;
+  }
+  .grad-img {
+    /* float: rigth; */
+    height: 100%;
+    width: 200px;
+  }
+  .card-btn {
+    width: 30%;
+    position: absolute;
+    left: 50px;
+    bottom: 13%;
+  }
+  .heading h1 {
+    font-size: 3em;
+    text-align: left;
+  }
+  .line {
+    font-size: 2.5em;
+    text-align: left;
+  }
+  /* .line::before{
+      position: absolute;
+      content: '';
+      margin-about-.about-left: 1rem;
+      width: 10%;
+      background: #2c2c2c ;
+      height: 2px;
+      top: 75%;
+      about-.about-left: 0;
+  } */
+  /* .before-line {
+    position: absolute;
+    top: 70%;
+    display: block;
+    width: 10%;
+    height: 0.2rem;
+    background: #2c2c2c;
+  } */
+}
+@media all and (min-width: 800px) {
+  .grad-img {
+    height: 100%;
+    width: 300px;
+  }
+  .card-text {
+    font-size: 1em;
+  }
+}
+@media all and (min-width: 1050px) {
+  .grad-img {
+    height: 100%;
+    width: 400px;
+  }
+}

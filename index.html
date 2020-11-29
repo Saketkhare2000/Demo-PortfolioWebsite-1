@@ -7,7 +7,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    /> -->
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -20,6 +23,8 @@
     <link rel="stylesheet" href="Cstyle.css" />
     <!---Text animation-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- about page stylesheet  -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <!---fonts-->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish:wght@300&family=Playfair+Display:wght@800&family=Ubuntu:wght@300&display=swap"
@@ -97,10 +102,136 @@
         <!----/.one---->
       </div>
       <!-----/.one-->
-      <!--two-->
-      <div class="panel two" id="two">
-        <!-----------/.Carousel-controls------------->
-        <div
+      <!-- about us section page starts here  -->
+      <section class="about-me">
+
+        <div class="frame">
+          <div class="about-left">
+            <div class="heading">
+              <h1 class="heading-h1">Graduation</h1>
+              
+              <h2 class="line">
+                <span class="before-line"></span>
+                Ceremony
+              </h2>
+            </div>
+            
+            <div class="body">
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+                sunt blanditiis laboriosam ipsam quis ab enim obcaecati quo
+                corporis, beatae quam hic cupiditate voluptas aperiam mollitia
+                necessitatibus odit fuga nihil!
+              </p>
+            </div>
+          </div>
+          <div class="about-right">
+            <div class="img-holder">
+              <img
+              src="pics/graduation-img.png"
+              alt="ceremony image"
+              class="grad-img"
+              />
+            </div>
+            <div class="card-btn">Take a peek</div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="about-left">
+            <div class="heading">
+              <h1 class="heading-h1">Work</h1>
+              
+              <h2 class="line">
+                <span class="before-line"></span>
+                Philosphy
+              </h2>
+            </div>
+            
+            <div class="body">
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+                sunt blanditiis laboriosam ipsam quis ab enim obcaecati quo
+                corporis, beatae quam hic cupiditate voluptas aperiam mollitia
+                necessitatibus odit fuga nihil!
+              </p>
+            </div>
+          </div>
+          <div class="about-right">
+            <div class="img-holder">
+              <img
+              src="pics/philosphy-img.png"
+              alt="ceremony image"
+              class="grad-img"
+              />
+            </div>
+            <div class="card-btn">Take a peek</div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="about-left">
+            <div class="heading">
+              <h1 class="heading-h1">Skills</h1>
+              
+              <h2 class="line">
+                <span class="before-line"></span>
+                Areas
+              </h2>
+            </div>
+            
+            <div class="body">
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+                sunt blanditiis laboriosam ipsam quis ab enim obcaecati quo
+                corporis, beatae quam hic cupiditate voluptas aperiam mollitia
+                necessitatibus odit fuga nihil!
+              </p>
+            </div>
+          </div>
+          <div class="about-right">
+            <div class="img-holder">
+              <img
+              src="pics/skills-img.png"
+              alt="ceremony image"
+              class="grad-img"
+              />
+            </div>
+            <div class="card-btn">Take a peek</div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="about-left">
+            <div class="heading">
+              <h1 class="heading-h1">Career</h1>
+              
+              <h2 class="line">
+                <span class="before-line"></span>
+                Goals
+              </h2>
+            </div>
+            
+            <div class="body">
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+                sunt blanditiis laboriosam ipsam quis ab enim obcaecati quo
+                corporis, beatae quam hic cupiditate voluptas aperiam mollitia
+                necessitatibus odit fuga nihil!
+              </p>
+            </div>
+          </div>
+          <div class="about-right">
+            <div class="img-holder">
+              <img src="pics/career-img.png" alt="ceremony image" class="grad-img" />
+            </div>
+            <div class="card-btn">Take a peek</div>
+          </div>
+        </div>
+      </section>
+        
+        <!-- about us page section ends here  -->
+        <!--two-->
+        <div class="panel two" id=S"two">
+          <!-----------/.Carousel-controls------------->
+          <div
           id="carouselControls"
           class="carousel slide"
           data-ride="carousel"
@@ -314,7 +445,7 @@
           <div class="bottomcontent">
             <div class="right">
               <!--RIGHT-->
-              <h3>Send a message</h3>
+              <h3 style="margin-bottom: 0px;">Send a message</h3>
               <form>
                 <input
                   type="name"
@@ -323,6 +454,9 @@
                   aria-describedby="name"
                   placeholder="Full name"
                 />
+                <!-- <label for="name" class="label-name">
+                  <span class="content-name">Name</span>
+                </label> -->
                 <input
                   type="Email"
                   class="form-control"
@@ -355,7 +489,12 @@
                   class="iconify"
                   data-inline="false"
                   data-icon="eva:facebook-outline"
-                  style="color: #5b5b5b; font-size: 25.35421371459961px"
+                  class="social-icon"
+                  style="
+                    color: #5b5b5b;
+                    font-size: 25.35421371459961px;
+                    margin-bottom: 0px;
+                  "
                 ></span>
                 <span
                   class="iconify"
@@ -544,7 +683,7 @@
     </script>
     <!--____________________/.Image fade animations______________________-->
     <!--______________________________________________________FullpageJS_________________________________________________________________--->
-    <script>
+    <!-- <script>
       (function () {
         'use strict';
         /*[pan and well CSS scrolls]*/
@@ -684,7 +823,7 @@
           });
         }
       })();
-    </script>
+    </script> -->
     <!--______________________________________________________/.FullpageJS_________________________________________________________________--->
 
     <!-- Optional JavaScript -->
@@ -704,5 +843,12 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script>
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector('.well'),
+        smooth: true,
+      });
+    </script> -->
   </body>
 </html>
