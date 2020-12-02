@@ -1,113 +1,51 @@
-const tl = gsap.timeline({defaults: {ease: 'power2.Out'}});
+gsap.registerPlugin(ScrollTrigger);
+const tl = gsap.timeline({defaults: {ease: 'power4'}});
 
-tl.fromTo(
-  '.slide1',
-  {opacity: 0, y: '150'},
-  {
-    opacity: 1,
-    duration: 3,
-    y: '-0',
-    scrollTrigger: {
-      trigger: '.frame',
-      start: 'top bottom',
-      end: '500px 700px',
+tl.to('.box1', {
+  duration: 10,
+  opacity: 0,
+  scale: 0.8,
+  scrollTrigger: {
+    trigger: '.box2',
+    start: 'top 80%', //top(1st Value) - element(box) , center(2nd Value) - screen
+    end: 'top 10%', // edit 2nd value(i.e.38%) so that 2nd slide exactly stop above 1st slide. Also 2nd slide z index must be greater
+    // scrub: 4, // Strict animation while scrolling
+    pin: '.box1',
+    scrub: true,
+    pinSpacing: false,
     //   markers: true,
+    toggleActions: 'restart none none none',
+  },
+})
+  .to('.box2', {
+    duration: 8,
+    opacity: 0,
+    scale: 0.8,
+    scrollTrigger: {
+      trigger: '.box2',
+      start: 'top 3%', //top(1st Value) - element(box) , center(2nd Value) - screen
+      end: 'bottom 3%', // edit 2nd value(i.e.38%) so that 2nd slide exactly stop above 1st slide. Also 2nd slide z index must be greater
+      // scrub: 4, // Strict animation while scrolling
+      pin: '.box2',
       scrub: true,
-    //   pin:true
+      pinSpacing: false,
+      //   markers: true,
+      toggleActions: 'restart none none none',
     },
-  }
-)
-  .fromTo(
-    '.heading-h1',
-    {y: '100', opacity: 0},
-    {
-      y: '0',
-      opacity: 1,
-      scrollTrigger: {
-        trigger: '.slide1',
-        start: 'top 90%',
-        end: '500px 700px',
-        // markers: true,
-        scrub: true,
-      },
-    }
-  )
-  .fromTo(
-    '.line',
-    {y: '100', opacity: 0},
-    {
-      y: '0',
-      opacity: 1,
-      scrollTrigger: {
-        trigger: '.slide1',
-        start: 'top 80%',
-        end: '500px 700px',
-        // markers: true,
-        scrub: true,
-      },
-    }
-  )
-  .fromTo(
-    '.grad-img',
-    {x: '200', opacity: 0},
-    {
-      x: '0',
-      opacity: 1,
-      scrollTrigger: {
-        trigger: '.slide1',
-        start: 'top 80%',
-        end: '500px 700px',
-        // markers: true,
-        scrub: true,
-      },
-    }
-  )
-  .fromTo(
-    '.slide2',
-    {opacity: 0, y: '100'},
-    {
-      opacity: 1,
-      duration: 3,
-      y: '0',
-      scrollTrigger: {
-        trigger: '.slide2',
-        start: 'top 80%',
-        end: '500px 700px',
-        // markers: true,
-        scrub: true,
-      },
-    }
-  )
-  
-  .fromTo(
-    '.slide3',
-    {opacity: 0, y: '100'},
-    {
-      opacity: 1,
-      duration: 3,
-      y: '0',
-      scrollTrigger: {
-        trigger: '.slide3',
-        start: 'top 80%',
-        end: '500px 700px',
-        // markers: true,
-        scrub: true,
-      },
-    }
-  )
-  .fromTo(
-    '.slide4',
-    {opacity: 0, y: '100'},
-    {
-      opacity: 1,
-      duration: 3,
-      y: '0',
-      scrollTrigger: {
-        trigger: '.slide4',
-        start: 'top 80%',
-        end: '500px 700px',
-        // markers: true,
-        scrub: true,
-      },
-    }
-  );
+  })
+  .to('.box3', {
+    duration: 8,
+    opacity: 0,
+    scale: 0.8,
+    scrollTrigger: {
+      trigger: '.box3',
+      start: 'top 3%', //top(1st Value) - element(box) , center(2nd Value) - screen
+      end: 'bottom 3%', // edit 2nd value(i.e.38%) so that 2nd slide exactly stop above 1st slide. Also 2nd slide z index must be greater
+      // scrub: 4, // Strict animation while scrolling
+      pin: '.box3',
+      scrub: true,
+      pinSpacing: false,
+      // markers: true,
+      toggleActions: 'restart none none none',
+    },
+  });
