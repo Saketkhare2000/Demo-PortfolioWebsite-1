@@ -13,7 +13,7 @@ tl.to('.box1', {
     pin: '.box1',
     scrub: true,
     pinSpacing: false,
-    //   markers: true,
+    // markers: true,
     toggleActions: 'restart none none none',
   },
 })

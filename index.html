@@ -7,6 +7,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+    />
     <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
@@ -79,24 +85,25 @@
           <div class="name">
             <h1>NEEHA FATHIMA</h1>
             <hr />
-            <p>Creative web developer and designer</p>
+            <div class="hero-text">
+              <p>Creative web developer and designer</p>
+              <button class="btn contact-btn" style="background-color: #00AAAF; color: white;">contact me</button>
+            </div>
           </div>
           <!----Menu btn-->
-          <div class="menu" data-toggle="modal" data-target="#modalmodal">
+          <!-- <div class="menu" data-toggle="modal" data-target="#modalmodal">
             <button type="button" data-toggle="modal" data-target="#modalmodal">
               <img src="pics/menu.png" />
             </button>
-          </div>
+          </div> -->
 
           <!--navbar-->
           <nav class="navigation fixed-bottom">
             <ul>
               <li>
-                <a href="#two">Work</a>
+                <a href="#two"><img src="download scg.svg" alt="">Resume</a>
               </li>
-              <li>
-                <a href="about.html">About</a>
-              </li>
+              
             </ul>
           </nav>
         </div>
@@ -110,19 +117,19 @@
           <div class="about-left">
             <div class="heading">
               <h1 class="heading-h1">Graduation</h1>
-  
+
               <h2 class="line">
                 <span class="before-line"></span>
                 Ceremony
               </h2>
             </div>
-  
+
             <div class="body">
               <p class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
-                sunt blanditiis laboriosam ipsam quis ab enim obcaecati quo
-                corporis, beatae quam hic cupiditate voluptas aperiam mollitia
-                necessitatibus odit fuga nihil!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ratione sunt blanditiis laboriosam ipsam quis ab enim obcaecati
+                quo corporis, beatae quam hic cupiditate voluptas aperiam
+                mollitia necessitatibus odit fuga nihil!
               </p>
             </div>
           </div>
@@ -141,19 +148,19 @@
           <div class="about-left">
             <div class="heading">
               <h1 class="heading-h1">Work</h1>
-  
+
               <h2 class="line">
                 <span class="before-line"></span>
                 Philosphy
               </h2>
             </div>
-  
+
             <div class="body">
               <p class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
-                sunt blanditiis laboriosam ipsam quis ab enim obcaecati quo
-                corporis, beatae quam hic cupiditate voluptas aperiam mollitia
-                necessitatibus odit fuga nihil!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ratione sunt blanditiis laboriosam ipsam quis ab enim obcaecati
+                quo corporis, beatae quam hic cupiditate voluptas aperiam
+                mollitia necessitatibus odit fuga nihil!
               </p>
             </div>
           </div>
@@ -172,19 +179,19 @@
           <div class="about-left">
             <div class="heading">
               <h1 class="heading-h1">Skills</h1>
-  
+
               <h2 class="line">
                 <span class="before-line"></span>
                 Areas
               </h2>
             </div>
-  
+
             <div class="body">
               <p class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
-                sunt blanditiis laboriosam ipsam quis ab enim obcaecati quo
-                corporis, beatae quam hic cupiditate voluptas aperiam mollitia
-                necessitatibus odit fuga nihil!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ratione sunt blanditiis laboriosam ipsam quis ab enim obcaecati
+                quo corporis, beatae quam hic cupiditate voluptas aperiam
+                mollitia necessitatibus odit fuga nihil!
               </p>
             </div>
           </div>
@@ -203,19 +210,19 @@
           <div class="about-left">
             <div class="heading">
               <h1 class="heading-h1">Career</h1>
-  
+
               <h2 class="line">
                 <span class="before-line"></span>
                 Goals
               </h2>
             </div>
-  
+
             <div class="body">
               <p class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
-                sunt blanditiis laboriosam ipsam quis ab enim obcaecati quo
-                corporis, beatae quam hic cupiditate voluptas aperiam mollitia
-                necessitatibus odit fuga nihil!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ratione sunt blanditiis laboriosam ipsam quis ab enim obcaecati
+                quo corporis, beatae quam hic cupiditate voluptas aperiam
+                mollitia necessitatibus odit fuga nihil!
               </p>
             </div>
           </div>
@@ -344,7 +351,7 @@
             aria-hidden="true"
             data-inline="false"
             data-icon="ant-design:arrow-right-outlined"
-            style="color: #e3c567; font-size: 37px"
+            style="color: #00AAAF; font-size: 37px"
           ></span>
           <span class="sr-only">Next</span>
         </a>
@@ -450,7 +457,7 @@
         <div class="bottomcontent">
           <div class="right">
             <!--RIGHT-->
-            <h3 style="margin-bottom: 0px">Send a message</h3>
+            <h3 style="margin-bottom: 1rem">Send a message</h3>
             <form>
               <input
                 type="name"
@@ -476,8 +483,9 @@
                 aria-describedby="message"
                 placeholder="Write a message"
               />
-
-              <button type="submit" class="btn">Submit</button>
+              <div class="btn-padding">
+                <button type="submit" class="btn">Submit</button>
+              </div>
             </form>
           </div>
 
@@ -490,7 +498,35 @@
               <p>+91 988 838 6822</p>
             </div>
             <div class="socialicons">
-              <span
+              <ul class="social-icons">
+                <li>
+                  <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-tumblr" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- <span
                 class="iconify"
                 data-inline="false"
                 data-icon="eva:facebook-outline"
@@ -524,7 +560,7 @@
                 data-inline="false"
                 data-icon="uil:twitter-alt"
                 style="color: #5b5b5b; font-size: 25.35421371459961px"
-              ></span>
+              ></span> -->
             </div>
           </div>
         </div>
@@ -591,14 +627,14 @@
               </div>
             </div>
             <!---SECONDCOL-->
-            <div class="secondcol">
+            <!-- <div class="secondcol">
               <div class="content">
                 <h1>HOME</h1>
                 <h1><a href="about.html">ABOUT</a></h1>
                 <h1>HOME</h1>
                 <h1><a href="about.html">ABOUT</a></h1>
               </div>
-            </div>
+            </div> -->
           </div>
           <!----/.MODALBODY-->
         </div>
