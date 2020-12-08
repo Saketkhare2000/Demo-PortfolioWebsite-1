@@ -1,265 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-    />
-    <!-- <link
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" />
+  <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     /> -->
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <!--stylesheet=personalised-->
-    <link rel="stylesheet" href="stylesheet1.css" />
-    <link rel="stylesheet" href="Cstyle.css" />
-    <!---Text animation-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- about page stylesheet  -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <!-- gsap  -->
-    <!---fonts-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish:wght@300&family=Playfair+Display:wght@800&family=Ubuntu:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <!---syncopate-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <!---montserrat-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <!--lora-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <!---Rammetto one-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap"
-      rel="stylesheet"
-    />
-    <!---ubuntu-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <!---Poller One-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap"
-      rel="stylesheet"
-    />
-    <!--____________________Image fade animations______________________-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <!--stylesheet=personalised-->
+  <link rel="stylesheet" href="stylesheet1.css" />
+  <link rel="stylesheet" href="Cstyle.css" />
+  <!---Text animation-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- about page stylesheet  -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- gsap  -->
+  <!---fonts-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish:wght@300&family=Playfair+Display:wght@800&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet" />
+  <!---syncopate-->
+  <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet" />
+  <!---montserrat-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" />
+  <!--lora-->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet" />
+  <!---Rammetto one-->
+  <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet" />
+  <!---ubuntu-->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet" />
+  <!---Poller One-->
+  <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet" />
+  <!--____________________Image fade animations______________________-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!----------ICONIFY--------------->
-    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  <!----------ICONIFY--------------->
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
-    <title>Home Page</title>
-  </head>
+  <title>Home Page</title>
+</head>
 
-  <body>
-    <!-------------Well-------------->
-    <div class="well" id="well">
-      <!---one-->
-      <div class="panel landing">
-        <div class="one">
-          <div class="name">
-            <h1>NEEHA FATHIMA</h1>
-            <hr />
-            <div class="hero-text">
-              <p>Creative web developer and designer</p>
-              <button
-                class="btn contact-btn"
-                style="
+<body>
+  <!-------------Well-------------->
+  <div class="well" id="well">
+    <!---one-->
+    <div class="panel landing">
+      <div class="one">
+        <div class="name">
+          <h1>NEEHA FATHIMA</h1>
+          <hr />
+          <div class="hero-text">
+            <p>Creative web developer and designer</p>
+            <button class="btn contact-btn" style="
                   background-color: #28afb0;
                   color: white;
                   width: 229px;
                   height: 43px;
-                "
-              >
-                contact me
-              </button>
-            </div>
+                ">
+              contact me
+            </button>
           </div>
-          <!----Menu btn-->
-          <!-- <div class="menu" data-toggle="modal" data-target="#modalmodal">
+        </div>
+        <!----Menu btn-->
+        <!-- <div class="menu" data-toggle="modal" data-target="#modalmodal">
             <button type="button" data-toggle="modal" data-target="#modalmodal">
               <img src="pics/menu.png" />
             </button>
           </div> -->
 
-          <!--navbar-->
-          <nav class="navigation fixed-bottom">
-            <ul>
-              <li>
-                <a href="#two">
-                  <img src="download scg.svg" alt="" />
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <!----/.one---->
+        <!--navbar-->
+        <nav class="navigation fixed-bottom">
+          <ul>
+            <li>
+              <a href="#two">
+                <img src="download scg.svg" alt="" />
+                Resume
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <!-----/.one-->
-      <!-- about us section page starts here  -->
-      <!-- <div class="free-section"></div> -->
-      <section class="about-me">
-        <div class="frame slide1 box1">
-          <div class="about-left">
-            <div class="heading">
-              <h1 class="heading-h1">Graduation</h1>
-              <div class="before-line">
-                <h1>Ceremony</h1>
-              </div>
-            </div>
-
-            <div class="body">
-              <p class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione sunt blanditiis laboriosam ipsam quis ab enim obcaecati
-                quo corporis, beatae quam hic cupiditate voluptas aperiam
-                mollitia necessitatibus odit fuga nihil!
-              </p>
+      <!----/.one---->
+    </div>
+    <!-----/.one-->
+    <!-- about us section page starts here  -->
+    <!-- <div class="free-section"></div> -->
+    <section class="about-me">
+      <div class="frame slide1 box1">
+        <div class="about-left">
+          <div class="heading"> 
+            <h1 class="heading-h1">Graduation</h1>
+            <div class="before-line">
+              <h1>Ceremony</h1>
             </div>
           </div>
-          <div class="about-right">
-            <div class="img-holder">
-              <img
-                src="pics/graduation-img.png"
-                alt="ceremony image"
-                class="grad-img"
-              />
-            </div>
-            <div class="card-btn">Take a peek</div>
+
+          <div class="body">
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Ratione sunt blanditiis laboriosam ipsam quis ab enim obcaecati
+              quo corporis, beatae quam hic cupiditate voluptas aperiam
+              mollitia necessitatibus odit fuga nihil!
+            </p>
           </div>
         </div>
-        <div class="frame slide2 box2">
-          <div class="about-left">
-            <div class="heading">
-              <h1 class="heading-h1">Work</h1>
+        <div class="about-right">
+          <div class="img-holder">
+            <img src="pics/graduation-img.png" alt="ceremony image" class="grad-img" />
+          </div>
+          <div class="card-btn">Take a peek</div>
+        </div>
+      </div>
+      <div class="frame slide2 box2">
+        <div class="about-left">
+          <div class="heading">
+            <h1 class="heading-h1">Work</h1>
 
-              <div class="before-line">
-                <h1>Philosphy</h1>
-              </div>
-            </div>
-
-            <div class="body">
-              <p class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione sunt blanditiis laboriosam ipsam quis ab enim obcaecati
-                quo corporis, beatae quam hic cupiditate voluptas aperiam
-                mollitia necessitatibus odit fuga nihil!
-              </p>
+            <div class="before-line">
+              <h1>Philosphy</h1>
             </div>
           </div>
-          <div class="about-right">
-            <div class="img-holder">
-              <img
-                src="pics/philosphy-img.png"
-                alt="ceremony image"
-                class="grad-img"
-              />
-            </div>
-            <div class="card-btn">Take a peek</div>
+
+          <div class="body">
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Ratione sunt blanditiis laboriosam ipsam quis ab enim obcaecati
+              quo corporis, beatae quam hic cupiditate voluptas aperiam
+              mollitia necessitatibus odit fuga nihil!
+            </p>
           </div>
         </div>
-        <div class="frame slide3 box3">
-          <div class="about-left">
-            <div class="heading">
-              <h1 class="heading-h1">Skills</h1>
+        <div class="about-right">
+          <div class="img-holder">
+            <img src="pics/philosphy-img.png" alt="ceremony image" class="grad-img" />
+          </div>
+          <div class="card-btn">Take a peek</div>
+        </div>
+      </div>
+      <div class="frame slide3 box3">
+        <div class="about-left">
+          <div class="heading">
+            <h1 class="heading-h1">Skills</h1>
 
-              <div class="before-line">
-                <h1>Areas</h1>
-              </div>
-            </div>
-
-            <div class="body">
-              <p class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione sunt blanditiis laboriosam ipsam quis ab enim obcaecati
-                quo corporis, beatae quam hic cupiditate voluptas aperiam
-                mollitia necessitatibus odit fuga nihil!
-              </p>
+            <div class="before-line">
+              <h1>Areas</h1>
             </div>
           </div>
-          <div class="about-right">
-            <div class="img-holder">
-              <img
-                src="pics/skills-img.png"
-                alt="ceremony image"
-                class="grad-img"
-              />
-            </div>
-            <div class="card-btn">Take a peek</div>
+
+          <div class="body">
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Ratione sunt blanditiis laboriosam ipsam quis ab enim obcaecati
+              quo corporis, beatae quam hic cupiditate voluptas aperiam
+              mollitia necessitatibus odit fuga nihil!
+            </p>
           </div>
         </div>
-        <div class="frame slide4 box4">
-          <div class="about-left">
-            <div class="heading">
-              <h1 class="heading-h1">Career</h1>
+        <div class="about-right">
+          <div class="img-holder">
+            <img src="pics/skills-img.png" alt="ceremony image" class="grad-img" />
+          </div>
+          <div class="card-btn">Take a peek</div>
+        </div>
+      </div>
+      <div class="frame slide4 box4">
+        <div class="about-left">
+          <div class="heading">
+            <h1 class="heading-h1">Career</h1>
 
-              <div class="before-line">
-                <h1>Goals</h1>
-              </div>
-            </div>
-
-            <div class="body">
-              <p class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione sunt blanditiis laboriosam ipsam quis ab enim obcaecati
-                quo corporis, beatae quam hic cupiditate voluptas aperiam
-                mollitia necessitatibus odit fuga nihil!
-              </p>
+            <div class="before-line">
+              <h1>Goals</h1>
             </div>
           </div>
-          <div class="about-right">
-            <div class="img-holder">
-              <img
-                src="pics/career-img.png"
-                alt="ceremony image"
-                class="grad-img"
-              />
-            </div>
-            <div class="card-btn">Take a peek</div>
+
+          <div class="body">
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Ratione sunt blanditiis laboriosam ipsam quis ab enim obcaecati
+              quo corporis, beatae quam hic cupiditate voluptas aperiam
+              mollitia necessitatibus odit fuga nihil!
+            </p>
           </div>
         </div>
-      </section>
+        <div class="about-right">
+          <div class="img-holder">
+            <img src="pics/career-img.png" alt="ceremony image" class="grad-img" />
+          </div>
+          <div class="card-btn">Take a peek</div>
+        </div>
+      </div>
+    </section>
 
-      <!-- about us page section ends here  -->
-      <!--two-->
-      <div class="panel two" id=S"two">
+    <!-- about us page section ends here  -->
+    <!--two-->
+    <div class="panel two" id="two">
       <!-----------/.Carousel-controls------------->
-      <div
-        id="carouselControls"
-        class="carousel slide"
-        data-ride="carousel"
-        data-interval="false"
-        data-interval="false"
-        data-wrap="true"
-        data-touch="true"
-        data-keyboard="true"
-      >
+      <div id="carouselControls" class="carousel slide" data-ride="carousel" data-interval="false" data-interval="false"
+        data-wrap="true" data-touch="true" data-keyboard="true">
         <div class="carousel-inner">
           <!---Carousel Item One-->
           <div class="carousel-item active">
@@ -346,20 +291,10 @@
           <!--/.carouseL Item three-->
         </div>
         <!--/.Carousel-inner-->
-        <a
-          class="carousel-control-next"
-          href="#carouselControls"
-          role="button"
-          data-slide="next"
-        >
+        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
           <h3>Swipe</h3>
-          <span
-            class="iconify"
-            aria-hidden="true"
-            data-inline="false"
-            data-icon="ant-design:arrow-right-outlined"
-            style="color: #00aaaf; font-size: 37px"
-          ></span>
+          <span class="iconify" aria-hidden="true" data-inline="false" data-icon="ant-design:arrow-right-outlined"
+            style="color: #00aaaf; font-size: 37px"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
@@ -445,12 +380,8 @@
 
           <div class="btn">
             <p>Download</p>
-            <span
-              class="iconify"
-              data-inline="false"
-              data-icon="ant-design:arrow-down-outlined"
-              style="color: #c4c4c4"
-            ></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:arrow-down-outlined"
+              style="color: #c4c4c4"></span>
           </div>
 
           <!---insert btn here-->
@@ -462,30 +393,13 @@
             <!--RIGHT-->
             <h3 style="margin-bottom: 1rem">Send a message</h3>
             <form>
-              <input
-                type="name"
-                class="form-control"
-                id="name"
-                aria-describedby="name"
-                placeholder="Full name"
-              />
+              <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Full name" />
               <!-- <label for="name" class="label-name">
                   <span class="content-name">Name</span>
                 </label> -->
-              <input
-                type="Email"
-                class="form-control"
-                id="Email"
-                aria-describedby="name"
-                placeholder="Email address"
-              />
-              <input
-                type="message"
-                class="form-control"
-                id="message"
-                aria-describedby="message"
-                placeholder="Write a message"
-              />
+              <input type="Email" class="form-control" id="Email" aria-describedby="name" placeholder="Email address" />
+              <input type="message" class="form-control" id="message" aria-describedby="message"
+                placeholder="Write a message" />
               <div class="btn-padding">
                 <button type="submit" class="btn">Submit</button>
               </div>
@@ -575,22 +489,11 @@
     <!-------------/.Well-------------->
 
     <!---------------------------------MENU MODAL----------------------------------------------->
-    <div
-      class="modal fade left Mod"
-      tabindex="-1"
-      id="modalmodal"
-      aria-hidden="true"
-      aria-labelledby="modalmodal"
-      role="dialog"
-    >
+    <div class="modal fade left Mod" tabindex="-1" id="modalmodal" aria-hidden="true" aria-labelledby="modalmodal"
+      role="dialog">
       <div class="modal-dialog-full-width modal-dialog modal-fluid">
         <div class="modal-content-full-width modal-content">
-          <button
-            type="button"
-            class="close close1"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="close close1" data-dismiss="modal" aria-label="Close">
             ×
           </button>
 
@@ -646,23 +549,13 @@
     <!-----------------------------------------/.MODAL----------------------------------------------------->
 
     <!---------------------------------MODAL2----------------------------------------------->
-    <div
-      class="modal fade left modal2"
-      tabindex="-1"
-      id="modal2"
-      aria-hidden="true"
-      aria-labelledby="modalmodal"
-      role="dialog"
-    >
-      <div
-        class="modal-dialog-full-width modal-dialog modal-fluid modal-dialog-centered"
-      >
+    <div class="modal fade left modal2" tabindex="-1" id="modal2" aria-hidden="true" aria-labelledby="modalmodal"
+      role="dialog">
+      <div class="modal-dialog-full-width modal-dialog modal-fluid modal-dialog-centered">
         <div class="modal-content-full-width modal-content">
           <!--modal-body-->
           <div class="body2 d-flex">
-            <div
-              class="container-fluid d-flex justify-content-center align-items-center"
-            >
+            <div class="container-fluid d-flex justify-content-center align-items-center">
               <div class="part1 float-right">
                 <!--close btn-->
                 <div class="closecircle">
@@ -713,6 +606,7 @@
     <script>
       window.addEventListener('mousemove', cursor);
       const mouse = document.querySelector('.cursor');
+
       function cursor(e) {
         mouse.style.top = e.pageY + 'px';
         mouse.style.left = e.pageX + 'px';
@@ -872,33 +766,23 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
     <!-- gsap script  -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
       integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="app.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script>
@@ -907,5 +791,6 @@
         smooth: true,
       });
     </script> -->
-  </body>
+</body>
+
 </html>
