@@ -78,7 +78,7 @@ body {
     background-size: cover;
     background-position: 50% 50%;
   }
-  .hero-text{
+  .hero-text {
     text-align: center !important;
   }
   .cursor {
@@ -1259,14 +1259,13 @@ hr {
   background-color: #00aaaf;
   transform: scale(1.1);
 }
-.hero-text{
+.hero-text {
   height: auto;
   width: 34vw;
   text-align: left;
 }
-.hero-text p{
+.hero-text p {
   margin: 1rem 0rem 0rem 0rem;
-
 }
 
 .topcontent .btn:hover {
@@ -1451,7 +1450,7 @@ i:hover {
   .topcontent {
     margin-top: 10vh !important;
   }
-  .contact-btn{
+  .contact-btn {
     width: 7em !important;
   }
   .topcontent .heading .headone {
@@ -1581,7 +1580,7 @@ i:hover {
 }
 .frame {
   height: 90vh;
-  border-radius: 3px;
+  border-radius: 15px;
   background: #fff;
   text-align: center;
   display: flex;
@@ -1595,10 +1594,13 @@ i:hover {
 .heading {
   position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .grad-img {
   height: 100%;
   width: 100%;
+  border-radius: 10px;
   padding: 0rem 1rem;
 }
 .heading h1 {
@@ -1617,6 +1619,28 @@ i:hover {
   text-align: center;
   color: #28afb0;
 }
+.before-line {
+  position: relative;
+  display: flex; /* sets a flex container */
+  align-items: center; /* aligns vertically */
+  width: 80%;
+}
+.before-line h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  color: #28afb0;
+}
+.before-line::before {
+  border-top: 2px solid black;
+  display: block;
+  height: 1px;
+  content: ' ';
+  width: 100%; /* full-width ;)*/
+  top: 50%;
+  opacity: 0.2;
+}
 .card-text {
   padding: 1rem 0rem;
 }
@@ -1630,13 +1654,11 @@ i:hover {
   height: 40px;
   width: 100%;
   background: #28afb0;
-  transition: all 0.3s ease-in-out;
-  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
 }
 .card-btn:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  color: black;
-  font-weight: bold;
+  transform: scale(1.03);
 }
 .card-text {
   color: #2c2c2c;
@@ -1710,6 +1732,15 @@ i:hover {
     font-size: 2.5em;
     text-align: left;
   }
+  
+  .before-line h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #28afb0;
+  }
   /* .line::before{
       position: absolute;
       content: '';
@@ -1742,6 +1773,29 @@ i:hover {
   .grad-img {
     height: 100%;
     width: 400px;
+  }
+  .before-line {
+    position: relative;
+    display: flex; /* sets a flex container */
+    align-items: center; /* aligns vertically */
+    width: 40%;
+  }
+  .before-line h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #28afb0;
+  }
+  .before-line::before {
+    border-top: 2px solid black;
+    display: block;
+    height: 1px;
+    content: ' ';
+    width: 100%; /* full-width ;)*/
+    top: 50%;
+    opacity: 0.2;
   }
 }
 
