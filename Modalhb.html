@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--stylesheet=personalised-->
+
+    <!---Text animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!---fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish:wght@300&family=Playfair+Display:wght@800&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <!---Rammetto one-->
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+    <!---montserrat-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <!--____________________Image fade animations______________________-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!----------ICONIFY--------------->
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+    <title>Hobbies</title>
+    <style>
+        /*________________________MODAL2_________________________________*/
+        .modal2 {
+            background: rgb(0, 0, 0);
+            cursor: pointer;
+
+        }
+
+        .modal2 .modal-dialog-full-width {
+            height: 90vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+        }
+
+        .modal2 .modal-dialog-full-width .modal-content-full-width {
+            height: fit-content;
+            width: fit-content;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            outline: transparent;
+        }
+
+        /*____________CLose btn_______________*/
+        .part1 .closecircle {
+            border-radius: 50%;
+            height: 4em;
+            width: 4em;
+            background-color: #333232;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            float: flex-end;
+            text-align: end;
+        }
+
+        .part1 .closecircle .close2 {
+            color: white !important;
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            font-size: 3rem;
+            font-weight: 100;
+            opacity: 10 !important;
+            outline: 0 !important;
+            cursor: pointer;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            position: absolute;
+            transform: translate(0%, -2%);
+        }
+
+        .body2 {
+            height: 90vh;
+            width: 100vw;
+            border: 0em;
+            outline: 0em;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            transform: translate(0%, 0%);
+
+        }
+
+        .body2 .container-fluid {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            width: 100vw;
+        }
+
+        .part1 {
+            background-image: url("pics/modalyellow.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 50%, 50%;
+            display: flex;
+            border: none;
+            outline: 0em;
+            float: right;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            margin: 0em;
+            margin-left: 49vw;
+            justify-content: flex-end;
+        }
+
+        .part1 .content {
+            margin: 25% 20% 0% 0%;
+        }
+
+        .part1 .content .heading {
+            background: white;
+            height: 12%;
+            width: 100%;
+            padding: 0em;
+            margin-bottom: 10px;
+        }
+
+        .part1 .content .heading h3 {
+            height: 100%;
+            width: 100%;
+            font-family: 'Ubuntu', sans-serif;
+            font-style: normal;
+            font-weight: bolder;
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            align-self: center;
+            color: #000000;
+            padding: 9px 0px 0px 0px;
+
+        }
+
+        .part1 .content h6 {
+            font-family: 'Montserrat', serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 16px;
+            padding-bottom: 10px;
+            color: #414141;
+
+        }
+
+        .part1 .content p {
+            font-family: 'Montserrat', serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: #7A7A7A;
+        }
+
+        hr {
+
+            width: 200px;
+            height: 0px;
+            border: 0.1px solid #ffffff;
+        }
+
+        .body2 .part2 {
+            width: 36vw;
+            height: 43vh;
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .part2 img {
+            width: 35vw;
+            height: 42vh;
+        }
+
+        .part2 .closecircle {
+            display: none;
+        }
+
+
+
+
+        @media only screen and (max-width:1050px) {
+            .body2 .container-fluid {
+                display: flex;
+                flex-direction: column !important;
+                align-items: center;
+                justify-content: flex-start !important;
+            }
+
+            /*_____________Part 2________________*/
+            .part2 {
+                display: flex;
+                flex-direction: row;
+                justify-self: center;
+                align-self: center;
+                width: 90vw !important;
+                height: 35vh !important;
+                margin-left: auto;
+                margin-top: 10vh;
+                margin-right: auto !important;
+            }
+
+            .part2 img {
+                width: 88vw !important;
+                height: 97% !important;
+            }
+
+            .part2 .closecircle {
+                border-radius: 50%;
+                height: 2em;
+                width: 2em;
+                background-color: #333232;
+                padding: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                margin-left: 85vw;
+                margin-bottom: 33vh;
+                float: flex-end;
+                text-align: end;
+            }
+
+            .part2 .closecircle .close2 {
+                color: white !important;
+                padding: 0px;
+                margin: 0px;
+                display: flex;
+                font-size: 1.5rem;
+                font-weight: 100;
+                opacity: 10 !important;
+                outline: 0 !important;
+                cursor: pointer;
+                display: flex;
+                align-self: center;
+                justify-self: center;
+                position: absolute;
+                transform: translate(0%, -2%);
+            }
+
+            /*_____________Part 1________________*/
+            .part1 .closecircle {
+                display: none;
+            }
+
+            .part1 {
+                float: center;
+                width: 70vw;
+                height: 55vh;
+                position: relative;
+                margin: 0em;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30vh;
+                justify-content: flex-end;
+            }
+
+            .part1 .content {
+                margin: 9vh 0px 0px 0px !important;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center !important;
+            }
+
+            .part1 .content .heading {
+                height: 4vh;
+                margin-bottom: 2vh;
+            }
+
+            .part1 .content .heading h3 {
+                font-size: 4.2vw;
+            }
+
+            .part1 .content h6 {
+                text-align: center !important;
+                margin-top: 0 !important;
+                font-size: 2.5vw !important;
+                margin-bottom: 2vh;
+                letter-spacing: 0.02em;
+            }
+
+            .part1 .content p {
+                font-size: 3vw;
+                text-align: center;
+                line-height: 1vh;
+                margin-bottom: 0 !important;
+            }
+        }
+
+
+
+        /*=======================================================================*/
+    </style>
+</head>
+
+<body>
+
+
+
+    <button data-toggle="modal" class="btn-dark" data-target="#modal2"> CLick Me</button>
+
+
+
+
+
+
+
+
+
+
+    <!---------------------------------MODAL2----------------------------------------------->
+    <div class="modal fade left modal2" tabindex="-1" id="modal2" aria-hidden="true" aria-labelledby="modalmodal"
+        role="dialog">
+        <div class="modal-dialog-full-width modal-dialog modal-fluid modal-dialog-centered">
+            <div class="modal-content-full-width modal-content ">
+
+                <!--modal-body-->
+                <div class="body2 d-flex">
+
+                    <div class="container-fluid d-flex justify-content-center align-items-center">
+
+                        <div class="part1 float-right">
+                            <!--close btn-->
+                            <div class="closecircle">
+                                <div class="close2" data-dismiss="modal" aria-label="Close">×</div>
+                            </div>
+                            <!---/.close btn-->
+                            <div class="content">
+                                <div class="heading">
+                                    <h3>PROJECT 1</h3>
+                                </div>
+                                <h6>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</h6>
+                                <p>Lorem ipsum dolor sit.</p>
+                                <hr>
+                                <p>Lorem ipsum dolor sit.</p>
+                                <hr>
+                                <p>Lorem ipsum dolor sit.</p>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="part2">
+                            <div class="closecircle">
+                                <div class="close2" data-dismiss="modal" aria-label="Close">×</div>
+                            </div>
+                            <img src="pics/modalgirl.png" alt="A girl">
+                        </div>
+
+                    </div>
+
+                </div>
+                <!----/.modalbody-->
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-----------------------------------------/.MODAL2----------------------------------------------------->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

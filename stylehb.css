@@ -1,0 +1,715 @@
+/*===================================================== HOBBIES/CARDS PAGE  == 4 ==============================================================*/
+.hobbies {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.hobbies h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    color: #2C2C2C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 4vh 0 0 0;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    width: fit-content;
+    align-self: center;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.hobbies .Abtrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+}
+
+.hobbies .Abtrow .Abtcol {
+    width: 25%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hobbies .Abtrow .Abtcol .Abtcards {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: 0.5s ease-in-out;
+
+}
+
+.hobbies .Abtrow .Abtcol .Abtcards:hover {
+    transform: scale(1.02);
+}
+
+.hobbies .Abtrow .Abtcol .Abtcards .picz:hover {
+
+    /* box-shadow: 0px -2px 20px rgba(0, 0, 0, 0.25), -2px 0px 20px rgba(0, 0, 0, 0.25), 0px 2px 20px rgba(0, 0, 0, 0.25); */
+    box-shadow: -2px 0px 50px 10px rgba(0, 0, 0, 0.25), 0px 2px 50px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease-out;
+}
+
+.hobbies .Abtrow .Abtcol .Abtcards .tag:hover {
+
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.1s;
+}
+
+.hobbies .Abtrow .Abtcol .Abtcards .tag {
+    width: 290px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    justify-self: flex-start;
+    padding-bottom: -510px;
+    position: sticky;
+    transform: translateY(80%);
+    font-size: 16px;
+    font-family: 'Montserrat', serif;
+    font-weight: normal;
+}
+
+.hobbies .Abtrow .Abtcol .Abtcards .picz {
+    width: fit-content !important;
+    height: fit-content !important;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media only screen and (max-width:1196px) {
+    .hobbies .Abtrow .Abtcol .Abtcards .picz {
+        width: 200px;
+        height: 60vh;
+    }
+
+    .hobbies .Abtrow .Abtcol .Abtcards .tag {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .hobbies h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .hobbies .Abtrow {
+        height: 80vh;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .hobbies .Abtrow .Abtcol {
+        width: 50% !important;
+        height: 40vh !important;
+    }
+
+    .hobbies .Abtrow .Abtcol .Abtcards .picz {
+        width: 400px !important;
+        height: 400px !important;
+    }
+
+    .hobbies .Abtrow .Abtcol .Abtcards .tag {
+        width: 400px !important;
+    }
+}
+
+@media only screen and (max-width:830px) {
+    .hobbies h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .hobbies .Abtrow {
+        height: 80vh;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .hobbies .Abtrow .Abtcol {
+        width: 50% !important;
+        height: 40vh !important;
+    }
+
+    .hobbies .Abtrow .Abtcol .Abtcards .picz {
+        width: 300px !important;
+        height: 250px !important;
+    }
+
+    .hobbies .Abtrow .Abtcol .Abtcards .tag {
+        width: 300px !important;
+    }
+}
+
+@media only screen and (max-width:645px) {
+    .hobbies .Abtrow .Abtcol .Abtcards .picz {
+        width: 200px !important;
+        height: 250px !important;
+    }
+
+    .hobbies .Abtrow .Abtcol .Abtcards .tag {
+        width: 200px !important;
+        height: 5.5vh;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .hobbies h2 {
+        font-size: 2rem !important;
+        padding: 0;
+        border-bottom: 0;
+    }
+
+    .hobbies .Abtrow {
+        flex-direction: column;
+        height: 90vh;
+        width: 100%;
+    }
+
+    .hobbies .Abtrow .Abtcol {
+        width: 100% !important;
+        height: 140px !important;
+        justify-content: center !important;
+    }
+
+    .hobbies .Abtrow .Abtcol .Abtcards .picz {
+        width: 300px !important;
+        height: 140px !important;
+    }
+
+    .hobbies .Abtrow .Abtcol .Abtcards .tag {
+        width: 300px !important;
+        height: 5.5vh;
+    }
+    .hobbies .Abtrow .Abtcol .Abtcards .picz:hover {
+        box-shadow: none;
+    }
+    
+    .hobbies .Abtrow .Abtcol .Abtcards .tag:hover {
+    
+        box-shadow: none;
+        transition: 0.1s;
+    }
+    .hobbies .Abtrow .Abtcol .Abtcards:hover {
+        transform: none;
+    }
+}
+
+
+
+/* @media screen and (min-height:1366px),
+        screen and (min-width:1024px) {
+            .hobbies .Abtrow .Abtcol .Abtcards .picz {
+                width: 400px ;
+                height: 500px;
+            }
+            .hobbies .Abtrow .Abtcol .Abtcards .tag {
+                width: 400px;
+                height: 5.5vh;
+                font-size: 26px;
+            }
+        } */
+
+@media only screen and (max-height:640px) {
+    .hobbies .Abtrow .Abtcol .Abtcards .picz {
+        width: 280px !important;
+        height: 125px !important;
+    }
+
+    .hobbies .Abtrow .Abtcol .Abtcards .tag {
+        width: 280px !important;
+        height: 5.5vh;
+    }
+}
+
+
+
+
+/*__________________________________HOBBIES MODAL - MODAL2__________________________________________*/
+.modal2 {
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 100%;
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+
+}
+
+.modal2 .modal-dialog-full-width {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center !important;
+    align-items: center !important;
+    background: transparent;
+    margin: 0 !important;
+    padding: 0 !important;
+    /* transform: translateX(100%); */
+}
+
+.modal2 .modal-dialog-full-width .modal-content-full-width {
+    justify-self: center;
+    align-self: center;
+    height: fit-content;
+    width: fit-content;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: transparent;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/*____________CLose btn_______________*/
+.part1 .closecircle {
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    background-color: #333232;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    float: flex-end;
+    text-align: end;
+}
+
+.part1 .closecircle .close2 {
+    color: white !important;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    font-size: 3rem;
+    font-weight: 100;
+    opacity: 10 !important;
+    outline: 0 !important;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    transform: translate(0%, -2%);
+}
+
+.body2 {
+    height: 100vh;
+    width: 100%;
+    border: 0em;
+    outline: 0em;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    transform: translate(25vw, 0%);
+    margin: 0 !important;
+    padding: 0;
+}
+
+.body2 .container-fluid {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.part1 {
+    /* background-image: url("pics/modalyellow.png"); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0%, 0%;
+    display: flex;
+    border: none;
+    outline: 0em;
+    float: right;
+    width: 500px;
+    height: 66.31vh;
+    /* width: 32.57328990228013vw;
+            height: 66.3129973474801vh; */
+    position: relative;
+    margin: 0;
+    justify-content: flex-end;
+    background: rgba(40, 175, 176, 1);
+    transform: translateX(0%);
+}
+
+.part1 .triangle {
+    height: 0;
+    width: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid black;
+    border-bottom: 40px solid transparent;
+    border-top: 40px solid black;
+    justify-self: flex-end;
+    position: absolute;
+
+}
+
+
+.part1 .content {
+    /* margin: 25% 20% 0% 0%; */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20%;
+}
+
+.part1 .content .heading {
+    background: white;
+    height: 14%;
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.part1 .content .heading h3 {
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    align-self: center;
+    color: #000000;
+    padding: 9px 0px 0px 0px;
+
+}
+
+.part1 .content .sub-head {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 10px;
+    color: #414141;
+    text-align: center;
+
+}
+
+.part1 .content .text {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    border-bottom: 1px solid rgb(112, 112, 112);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.part1 .content .hbbutton {
+    width: 200px;
+    margin: 5px 0;
+    background-color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #4F4F4F;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.1s ease;
+}
+
+.part1 .content .hbbutton:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transform: scale(1.01);
+}
+
+.body2 .part2 {
+    width: 550px;
+    height: 330px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(30%);
+    margin: 0;
+}
+
+.part2 img {
+    width: 540px;
+    height: 320px;
+}
+
+.part2 .closecircle {
+    display: none;
+}
+
+
+/*=============MEDIA QUERIES============*/
+
+@media only screen and (max-width:600px) {
+
+    .body2 {
+        transform: translateX(0%) !important;
+    }
+
+    .body2 .container-fluid {
+        display: flex;
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 100vh;
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    /*_____________Part 2________________*/
+    .body2 .container-fluid .part2 {
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-start;
+        align-self: flex-start;
+        width: 100vw !important;
+        height: 40vh !important;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        transform: translateX(0%);
+    }
+
+    .part2 img {
+        width: 97vw !important;
+        height: 37vh !important;
+    }
+
+
+
+    /*______________-Part 1_________________*/
+    .part1 {
+        float: center;
+        width: 100vw !important;
+        height: 60vh !important;
+        position: relative;
+        margin: 0em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0vh;
+        justify-content: flex-end;
+        transform: translateX(0%) !important;
+
+    }
+
+    .part1 .closecircle {
+        border-radius: 50%;
+        height: 4em;
+        width: 4em;
+        background-color: #333232;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        float: flex-end;
+        text-align: end;
+    }
+
+    .part1 .closecircle .close2 {
+        color: white !important;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        font-size: 3rem;
+        font-weight: 100;
+        opacity: 10 !important;
+        outline: 0 !important;
+        cursor: pointer;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        position: absolute;
+        transform: translate(0%, -2%);
+    }
+
+    .part1 .triangle {
+        border-left: 40px solid transparent;
+        border-right: 40px solid rgb(255, 255, 255);
+        border-bottom: 40px solid transparent;
+        border-top: 40px solid rgb(255, 255, 255);
+    }
+
+    .part1 .content {
+        margin: 0 !important;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center !important;
+        align-items: center;
+        transform: translateY(-8%);
+    }
+
+    .part1 .content .heading {
+        height: 12%;
+        width: 200px;
+        margin-bottom: 3vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .part1 .content .heading h3 {
+        font-size: 20px;
+    }
+
+    .part1 .content .sub-head {
+        text-align: center !important;
+        margin-top: 0 !important;
+        font-size: 14px !important;
+        margin-bottom: 2vh;
+        letter-spacing: 0.02em;
+    }
+
+    .part1 .content .text {
+        font-size: 18px;
+        text-align: center;
+
+    }
+
+}
+
+@media only screen and (max-width:1024px) {
+    .body2 .part1 {
+        width: 400px;
+        height: 500px;
+    }
+
+    .body2 .part2 {
+        width: 500px;
+        height: 300;
+        transform: translateX(20%);
+    }
+
+    .part2 .img {
+        width: 490px;
+        height: 290px;
+    }
+}
+
+@media only screen and (min-height:900px) {
+    .body2 .part1 {
+        width: 400px;
+        height: 450px;
+    }
+
+    .body2 .part2 {
+        width: 500px;
+        height: 200px !important;
+        transform: translateX(20%);
+    }
+
+    .part2 .img {
+        width: 480px !important;
+        height: 200px !important;
+    }
+}
+
+@media only screen and (max-width:912px) {
+    .body2 {
+        transform: translateX(10vw);
+    }
+
+    .body2 .part1 {
+        width: 500px;
+    }
+
+    .body2 .part2 {
+        width: 400px;
+        transform: translateX(40%);
+    }
+
+    .part2 .img {
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .body2 {
+        transform: translateX(5vw);
+    }
+
+    .body2 .part1 {
+        width: 400px;
+
+    }
+
+    .body2 .part2 {
+        width: 350px;
+        transform: translateX(30%);
+    }
+
+    .part2 .img {
+        width: 330px;
+    }
+}
+
+@media only screen and (max-width:673px) {
+    .body2 {
+        transform: translateX(5vw);
+    }
+
+    .body2 .part1 {
+        width: 300px;
+        height: 400px;
+        transform: translateX(20%);
+    }
+
+    .body2 .part2 {
+        width: 300px;
+        height: 200px;
+        transform: translateX(30%);
+    }
+
+    .part2 .img {
+        width: 330px;
+
+    }
+}
+
+/*=======================================HOBBIES MODAL =====================================*/
+
+/*===================================================== HOBBIES/CARDS PAGE == 4 ==============================================================*/

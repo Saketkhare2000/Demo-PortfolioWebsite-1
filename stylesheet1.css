@@ -50,7 +50,7 @@ body {
     overflow: hidden;
     cursor: pointer;
     margin: 0;
-    font-family: "Limelight", sans-serif;
+    font-family: "Montserrat", serif;
     text-rendering: optimizeLegibility;
     height: 500vh;
 }
@@ -97,6 +97,7 @@ body {
 @media only screen and (max-width:699px) {
     .panel:nth-child(1) {
         padding: 0px;
+        height: 100vh !important;
         background-image: url("pics/bg4.png");
         background-color: black;
         background-repeat: no-repeat;
@@ -1159,9 +1160,9 @@ hr {
     }
 
     /*_____________Part 1________________*/
-    .part1 .closecircle {
+    /* .part1 .closecircle {
         display: none;
-    }
+    } */
 
     .part1 {
         float: center;
