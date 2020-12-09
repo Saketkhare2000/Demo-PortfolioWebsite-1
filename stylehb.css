@@ -208,15 +208,17 @@
         width: 300px !important;
         height: 5.5vh;
     }
+
     .hobbies .Abtrow .Abtcol .Abtcards .picz:hover {
         box-shadow: none;
     }
-    
+
     .hobbies .Abtrow .Abtcol .Abtcards .tag:hover {
-    
+
         box-shadow: none;
         transition: 0.1s;
     }
+
     .hobbies .Abtrow .Abtcol .Abtcards:hover {
         transform: none;
     }
