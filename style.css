@@ -20,6 +20,7 @@ body {
   padding: 1rem 3rem;
   margin: 3rem 3rem;
 }
+
 .heading {
   position: relative;
   text-align: center;
@@ -28,6 +29,7 @@ body {
   height: 100%;
   width: 100%;
   padding: 0rem 1rem;
+  transform: translateX(50%);
 }
 .heading h1 {
   font-family: Montserrat;
@@ -103,7 +105,7 @@ body {
     width: 70%;
   }
   .grad-img {
-    /* float: rigth; */
+    /* float: right; */
     height: 100%;
     width: 200px;
   }
