@@ -636,12 +636,14 @@ h1:before {
 
 .media .first:before {
   content: attr(data-text);
-  background: radial-gradient(circle at 30% 107%,
-      #fdf497 0%,
-      #fdf497 5%,
-      #fd5949 45%,
-      #d6249f 60%,
-      #285aeb 90%);
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -649,12 +651,14 @@ h1:before {
 
 .media .second:before {
   content: attr(data-text);
-  background: radial-gradient(circle at 30% 107%,
-      #00acee 0%,
-      #66757f 5%,
-      #00acee 45%,
-      #36d8ff 60%,
-      #f5f8fa 90%);
+  background: radial-gradient(
+    circle at 30% 107%,
+    #00acee 0%,
+    #66757f 5%,
+    #00acee 45%,
+    #36d8ff 60%,
+    #f5f8fa 90%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1329,8 +1333,6 @@ hr {
   margin: 1rem 0rem 0rem 0rem;
 }
 
-
-
 .topcontent .btn:hover {
   background: #00aaaf;
   border: none;
@@ -1522,13 +1524,12 @@ i:hover {
     font-size: 10px;
     width: 5rem !important;
   }
-
+}
 
 @media only screen and (max-width: 700px) {
   .topcontent {
     margin-top: 10vh !important;
   }
-
 
   .topcontent .heading .headone {
     font-size: 26px;
@@ -1733,8 +1734,6 @@ i:hover {
   opacity: 0.2;
 }
 
-
-
 .body .card-text {
   color: rgba(123, 123, 123, 1);
   width: fit-content;
@@ -1766,14 +1765,14 @@ i:hover {
 }
 
 .grad-img {
-  height: 100% ;
+  height: 100%;
   border-radius: 0;
   width: 100%;
 }
-@media only screen and (min-width:680px){
+@media only screen and (min-width: 680px) {
   .about-right .card-btn {
     display: none;
-  } 
+  }
 }
 
 .about-left .body .card-btn {
@@ -1796,7 +1795,6 @@ i:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   transform: scale(1.05);
 }
-
 
 .img-holder {
   overflow: hidden;
@@ -1831,7 +1829,6 @@ i:hover {
     font-size: 1.5em;
   }
 } */
-
 
 @media all and (min-width: 680px) {
   .about-left {
@@ -1931,7 +1928,6 @@ i:hover {
 } */
 /*=====================Extra Media Queries=============================================== */
 
-
 @media only screen and (max-width: 1130px) {
   .about-right .img-holder {
     transform: translateX(14%);
@@ -1969,8 +1965,7 @@ i:hover {
   }
 }
 
-
-@media only screen and (max-width:870px) {
+@media only screen and (max-width: 870px) {
   .about-right .img-holder {
     transform: translateX(15.5%);
     width: 280px;
@@ -1978,8 +1973,8 @@ i:hover {
   }
 }
 
-@media only screen and (max-width:800px) {
-  .frame{
+@media only screen and (max-width: 800px) {
+  .frame {
     display: flex;
     flex-direction: column;
     height: 90vh;
@@ -1992,20 +1987,20 @@ i:hover {
     width: 90%;
     height: fit-content;
     margin: 0;
-    padding: 0!important;
+    padding: 0 !important;
   }
 
   .about-left .heading {
     align-items: center;
     justify-content: center;
   }
-  .about-left .heading h1{
+  .about-left .heading h1 {
     width: fit-content;
   }
-  .before-line{
+  .before-line {
     width: 60% !important;
   }
-  .before-line h1{
+  .before-line h1 {
     width: fit-content;
   }
   .body {
@@ -2044,7 +2039,7 @@ i:hover {
     width: 92% !important;
   }
 
-  .about-left .body .card-btn{
+  .about-left .body .card-btn {
     display: none !important;
   }
   .about-right .card-btn {
@@ -2063,7 +2058,7 @@ i:hover {
     background: #28afb0;
     transition: all 0.2s ease-in-out;
   }
-  
+
   .about-right .card-btn:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     transform: scale(1.05);
@@ -2077,8 +2072,6 @@ i:hover {
     width: 40%;
   }
 }
-
-
 
 .box1 {
   /* height: 100vh; */
