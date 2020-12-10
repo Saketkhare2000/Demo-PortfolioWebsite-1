@@ -6,30 +6,66 @@
 }
 
 /*============ CURSOR CSS============*/
-/* .cursor {
-  width: 1rem;
-  height: 1rem;
-  z-index: 999 !important;
-  background-color: rgba(255, 255, 255, 0.685);
-  border: 2px solid white;
+.cursor {
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgb(160, 160, 160);
+  background: rgba(179, 179, 179, 0.075);
   border-radius: 50%;
   position: absolute;
-  transform: translate(-50%, -50%);
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim .5s infinite alternate;
   pointer-events: none;
-  transition: all 0.5s ease-in-out;
-  transition-property: background, transform;
-  transform-origin: 75% 75%;
-} */
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(.98);
+  }
+}
+
+@keyframes cursorAnim2 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(3);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursorAnim2 .5s forwards;
+  border: 1px solid rgb(44, 44, 44);
+}
+
+@media only screen and (max-width:620px) {
+  .cursor {
+    display: none;
+  }
+}
 
 /*______________________________________________________FullpageCSS_________________________________________________________________*/
 
 body {
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
   overflow-y: visible;
   margin: 0;
-  font-family: 'Limelight', sans-serif;
+  font-family: 'Montserrat', serif;
   text-rendering: optimizeLegibility;
-  height: 500vh;
+  height: 600vh;
 }
 
 body::-webkit-scrollbar {
@@ -111,7 +147,7 @@ body::-webkit-scrollbar {
 }
 
 .panel:nth-child(4) {
-  background: rgb(255, 255, 255);
+  background: whitesmoke;
   height: 100vh;
   width: 100vw;
   margin: 0px;
@@ -125,6 +161,7 @@ body::-webkit-scrollbar {
   margin: 0px;
   padding: 0px;
 }
+
 .panel:nth-child(6) {
   background: rgba(44, 44, 44, 1);
   height: 100vh;
@@ -132,6 +169,7 @@ body::-webkit-scrollbar {
   margin: 0px;
   padding: 0px;
 }
+
 /*__________________________First scroll_____________________________________*/
 /* .one {
   position: relative;
@@ -595,6 +633,7 @@ body::-webkit-scrollbar {
 /*===================================================== HOBBIES/CARDS PAGE  == 4 ==============================================================*/
 .hobbies {
   width: 100%;
+  background-color: whitesmoke;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -699,122 +738,127 @@ body::-webkit-scrollbar {
 
 @media only screen and (max-width:1196px) {
   .hobbies .Abtrow .Abtcol .Abtcards .picz {
-      width: 200px;
-      height: 60vh;
+    width: 200px;
+    height: 60vh;
   }
 
   .hobbies .Abtrow .Abtcol .Abtcards .tag {
-      width: 200px;
+    width: 200px;
   }
 }
 
 @media only screen and (max-width:1024px) {
   .hobbies h2 {
-      font-size: 36px;
-      line-height: 40px;
+    font-size: 36px;
+    line-height: 40px;
   }
 
   .hobbies .Abtrow {
-      height: 80vh;
-      width: 100%;
-      flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    flex-direction: column;
   }
 
   .hobbies .Abtrow .Abtcol {
-      width: 50% !important;
-      height: 40vh !important;
+    width: 50% !important;
+    height: 40vh !important;
   }
 
   .hobbies .Abtrow .Abtcol .Abtcards .picz {
-      width: 400px !important;
-      height: 400px !important;
+    width: 400px !important;
+    height: 400px !important;
   }
 
   .hobbies .Abtrow .Abtcol .Abtcards .tag {
-      width: 400px !important;
+    width: 400px !important;
   }
 }
 
 @media only screen and (max-width:830px) {
   .hobbies h2 {
-      font-size: 36px;
-      line-height: 40px;
+    font-size: 36px;
+    line-height: 40px;
   }
 
   .hobbies .Abtrow {
-      height: 80vh;
-      width: 100%;
-      flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    flex-direction: column;
   }
 
   .hobbies .Abtrow .Abtcol {
-      width: 50% !important;
-      height: 40vh !important;
+    width: 50% !important;
+    height: 40vh !important;
   }
 
   .hobbies .Abtrow .Abtcol .Abtcards .picz {
-      width: 300px !important;
-      height: 250px !important;
+    width: 300px !important;
+    height: 250px !important;
   }
 
   .hobbies .Abtrow .Abtcol .Abtcards .tag {
-      width: 300px !important;
+    width: 300px !important;
   }
 }
 
 @media only screen and (max-width:645px) {
   .hobbies .Abtrow .Abtcol .Abtcards .picz {
-      width: 200px !important;
-      height: 250px !important;
+    width: 200px !important;
+    height: 250px !important;
   }
 
   .hobbies .Abtrow .Abtcol .Abtcards .tag {
-      width: 200px !important;
-      height: 5.5vh;
+    width: 200px !important;
+    height: 5.5vh;
   }
 }
 
 @media only screen and (max-width:520px) {
+  .hobbies {
+    height: 150vh;
+  }
+
   .hobbies h2 {
-      font-size: 2rem !important;
-      padding: 0;
-      border-bottom: 0;
+    font-size: 2rem !important;
+    padding: 3vh 0 0 0 !important;
+    padding: 0;
+    border-bottom: 0;
   }
 
   .hobbies .Abtrow {
-      flex-direction: column;
-      height: 90vh;
-      width: 100%;
+    flex-direction: column;
+    height: 135vh;
+    width: 100%;
   }
 
   .hobbies .Abtrow .Abtcol {
-      width: 100% !important;
-      height: 140px !important;
-      justify-content: center !important;
+    width: 100% !important;
+    height: 210px !important;
+    justify-content: center !important;
   }
 
   .hobbies .Abtrow .Abtcol .Abtcards .picz {
-      width: 300px !important;
-      height: 140px !important;
+    width: 300px !important;
+    height: 210px !important;
   }
 
   .hobbies .Abtrow .Abtcol .Abtcards .tag {
-      width: 300px !important;
-      height: 5.5vh;
+    width: 300px !important;
+    height: 5.5vh;
   }
 
   .hobbies .Abtrow .Abtcol .Abtcards .picz:hover {
-      box-shadow: none;
+    box-shadow: none;
   }
 
   .hobbies .Abtrow .Abtcol .Abtcards .tag:hover {
 
-      box-shadow: none;
-      transition: 0.1s;
+    box-shadow: none;
+    transition: 0.1s;
   }
 
   .hobbies .Abtrow .Abtcol .Abtcards:hover {
-      transform: none;
+    transform: none;
   }
 }
 
@@ -835,13 +879,13 @@ body::-webkit-scrollbar {
 
 @media only screen and (max-height:640px) {
   .hobbies .Abtrow .Abtcol .Abtcards .picz {
-      width: 280px !important;
-      height: 125px !important;
+    width: 280px !important;
+    height: 125px !important;
   }
 
   .hobbies .Abtrow .Abtcol .Abtcards .tag {
-      width: 280px !important;
-      height: 5.5vh;
+    width: 280px !important;
+    height: 5.5vh;
   }
 }
 
@@ -1083,126 +1127,126 @@ body::-webkit-scrollbar {
 @media only screen and (max-width:600px) {
 
   .body2 {
-      transform: translateX(0%) !important;
+    transform: translateX(0%) !important;
   }
 
   .body2 .container-fluid {
-      display: flex;
-      flex-direction: column-reverse !important;
-      align-items: center !important;
-      justify-content: center !important;
-      height: 100vh;
-      width: 100%;
-      margin: 0 !important;
+    display: flex;
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100vh;
+    width: 100%;
+    margin: 0 !important;
   }
 
   /*_____________Part 2________________*/
   .body2 .container-fluid .part2 {
-      display: flex;
-      flex-direction: row;
-      justify-self: flex-start;
-      align-self: flex-start;
-      width: 100vw !important;
-      height: 40vh !important;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      transform: translateX(0%);
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    align-self: flex-start;
+    width: 100vw !important;
+    height: 40vh !important;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transform: translateX(0%);
   }
 
   .part2 img {
-      width: 97vw !important;
-      height: 37vh !important;
+    width: 97vw !important;
+    height: 37vh !important;
   }
 
 
 
   /*______________-Part 1_________________*/
   .part1 {
-      float: center;
-      width: 100vw !important;
-      height: 60vh !important;
-      position: relative;
-      margin: 0em;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 0vh;
-      justify-content: flex-end;
-      transform: translateX(0%) !important;
+    float: center;
+    width: 100vw !important;
+    height: 60vh !important;
+    position: relative;
+    margin: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0vh;
+    justify-content: flex-end;
+    transform: translateX(0%) !important;
 
   }
 
   .part1 .closecircle {
-      border-radius: 50%;
-      height: 4em;
-      width: 4em;
-      background-color: #333232;
-      padding: 0px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      float: flex-end;
-      text-align: end;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    background-color: #333232;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    float: flex-end;
+    text-align: end;
   }
 
   .part1 .closecircle .close2 {
-      color: white !important;
-      padding: 0px;
-      margin: 0px;
-      display: flex;
-      font-size: 3rem;
-      font-weight: 100;
-      opacity: 10 !important;
-      outline: 0 !important;
-      cursor: pointer;
-      display: flex;
-      align-self: center;
-      justify-self: center;
-      position: absolute;
-      transform: translate(0%, -2%);
+    color: white !important;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    font-size: 3rem;
+    font-weight: 100;
+    opacity: 10 !important;
+    outline: 0 !important;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    transform: translate(0%, -2%);
   }
 
   .part1 .triangle {
-      border-left: 40px solid transparent;
-      border-right: 40px solid rgb(255, 255, 255);
-      border-bottom: 40px solid transparent;
-      border-top: 40px solid rgb(255, 255, 255);
+    border-left: 40px solid transparent;
+    border-right: 40px solid rgb(255, 255, 255);
+    border-bottom: 40px solid transparent;
+    border-top: 40px solid rgb(255, 255, 255);
   }
 
   .part1 .content {
-      margin: 0 !important;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center !important;
-      align-items: center;
-      transform: translateY(-8%);
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center !important;
+    align-items: center;
+    transform: translateY(-8%);
   }
 
   .part1 .content .heading {
-      height: 12%;
-      width: 200px;
-      margin-bottom: 3vh;
-      align-items: center;
-      justify-content: center;
+    height: 12%;
+    width: 200px;
+    margin-bottom: 3vh;
+    align-items: center;
+    justify-content: center;
   }
 
   .part1 .content .heading h3 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .part1 .content .sub-head {
-      text-align: center !important;
-      margin-top: 0 !important;
-      font-size: 14px !important;
-      margin-bottom: 2vh;
-      letter-spacing: 0.02em;
+    text-align: center !important;
+    margin-top: 0 !important;
+    font-size: 14px !important;
+    margin-bottom: 2vh;
+    letter-spacing: 0.02em;
   }
 
   .part1 .content .text {
-      font-size: 18px;
-      text-align: center;
+    font-size: 18px;
+    text-align: center;
 
   }
 
@@ -1210,98 +1254,99 @@ body::-webkit-scrollbar {
 
 @media only screen and (max-width:1024px) {
   .body2 .part1 {
-      width: 400px;
-      height: 500px;
+    width: 400px;
+    height: 500px;
   }
 
   .body2 .part2 {
-      width: 500px;
-      height: 300;
-      transform: translateX(20%);
+    width: 500px;
+    height: 300;
+    transform: translateX(20%);
   }
 
   .part2 .img {
-      width: 490px;
-      height: 290px;
+    width: 490px;
+    height: 290px;
   }
 }
 
 @media only screen and (min-height:900px) {
   .body2 .part1 {
-      width: 400px;
-      height: 450px;
+    width: 400px;
+    height: 450px;
   }
 
   .body2 .part2 {
-      width: 500px;
-      height: 200px !important;
-      transform: translateX(20%);
+    width: 500px;
+    height: 200px !important;
+    transform: translateX(20%);
   }
 
   .part2 .img {
-      width: 480px !important;
-      height: 200px !important;
+    width: 480px !important;
+    height: 200px !important;
   }
 }
 
 @media only screen and (max-width:912px) {
   .body2 {
-      transform: translateX(10vw);
+    transform: translateX(10vw);
   }
 
   .body2 .part1 {
-      width: 500px;
+    width: 500px;
   }
 
   .body2 .part2 {
-      width: 400px;
-      transform: translateX(40%);
+    width: 400px;
+    transform: translateX(40%);
   }
 
   .part2 .img {
-      width: 380px;
+    width: 380px;
   }
 }
 
 @media only screen and (max-width:800px) {
   .body2 {
-      transform: translateX(5vw);
+    transform: translateX(5vw);
   }
 
   .body2 .part1 {
-      width: 400px;
+    width: 400px;
 
   }
 
   .body2 .part2 {
-      width: 350px;
-      transform: translateX(30%);
+    width: 350px;
+    transform: translateX(30%);
   }
 
   .part2 .img {
-      width: 330px;
+    width: 330px;
   }
 }
 
 @media only screen and (max-width:673px) {
+
   .body2 {
-      transform: translateX(5vw);
+    transform: translateX(5vw);
   }
 
   .body2 .part1 {
-      width: 300px;
-      height: 400px;
-      transform: translateX(20%);
+    width: 300px;
+    height: 400px;
+    transform: translateX(20%);
   }
 
   .body2 .part2 {
-      width: 300px;
-      height: 200px;
-      transform: translateX(30%);
+    width: 300px;
+    height: 200px;
+    transform: translateX(30%);
   }
 
   .part2 .img {
-      width: 330px;
+    width: 330px;
 
   }
 }
@@ -1665,7 +1710,6 @@ h1:hover:before {
   text-align: left;
   letter-spacing: -0.02em;
   color: #4e4e4e;
-
 }
 
 .bottomcontent .right form input {
@@ -1720,7 +1764,23 @@ h1:hover:before {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-@media only screen and (max-width:1026px) {
+
+
+@media only screen and (max-width:1024px) {
+
+  .topcontent .heading .headone {
+    font-size: 40px !important;
+  }
+
+  .topcontent .heading .headtwo {
+    font-size: 40px !important;
+  }
+
+  .topcontent .btn {
+    height: 52px;
+    width: 240px;
+  }
+
   .bottomcontent .left {
     padding: 10px 15px;
   }
@@ -1744,20 +1804,20 @@ h1:hover:before {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .topcontent {
     margin-top: 10vh !important;
   }
 
   .topcontent .heading .headone {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 40px !important;
+    line-height: 40px;
     padding-right: 10px;
   }
 
   .topcontent .heading .headtwo {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 40px !important;
+    line-height: 40px;
   }
 
   .topcontent .subtxt {
@@ -1767,13 +1827,13 @@ h1:hover:before {
 
   .topcontent .btn {
     margin: 0px auto 0px auto !important;
-    height: 40px;
-    width: 150px;
+    height: 50px;
+    width: 200px;
   }
 
   .topcontent .btn p {
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .bottomcontent .left {
@@ -1795,13 +1855,15 @@ h1:hover:before {
   }
 
   .social-icons .icon-box {
-    width: 9vw;
-    height: 9vh;
+    width: 60px;
+    height: 60px;
   }
+
   .bottomcontent .left .socialicons .icon-boxez .icon-box a {
     margin-left: 35% !important;
     margin-top: 15% !important;
   }
+
   .bottomcontent .left .socialicons .icon-boxez .icon-box a .iconify {
     font-size: 18px !important;
   }
@@ -1839,30 +1901,51 @@ h1:hover:before {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
+  .topcontent .heading .headone {
+    font-size: 28px !important;
+  }
+
+  .topcontent .heading .headtwo {
+    font-size: 28px !important;
+  }
+
+  .topcontent .btn {
+    margin: 0px auto 0px auto !important;
+    height: 50px;
+    width: 200px;
+  }
+
+  .topcontent .btn p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
   .bottomcontent .left {
     flex-direction: column !important;
     padding: 10px 10px;
   }
 
   .bottomcontent .left .text h6 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .bottomcontent .left .text p {
     font-size: 14px;
     line-height: 14px;
   }
 
-  .bottomcontent .left .text p {
-    font-size: 9px;
-    line-height: 9px;
-  }
-
   .social-icons .icon-box {
-    width: 12vw;
+    width: 15vw;
     height: 8vh;
   }
+
   .bottomcontent .left .socialicons .icon-boxez .icon-box a {
     margin-left: 35% !important;
     margin-top: 15% !important;
   }
+
   .bottomcontent .left .socialicons .icon-boxez .icon-box a .iconify {
     font-size: 18px !important;
   }
@@ -1874,6 +1957,108 @@ h1:hover:before {
   .bottomcontent .right h3 {
     font-size: 18px;
     line-height: 20px;
+  }
+}
+
+
+@media only screen and (min-height:840px) {
+  .topcontent .heading .headone {
+    font-size: 48px !important;
+    line-height: 48px;
+  }
+
+  .topcontent .heading .headtwo {
+    font-size: 48px !important;
+    line-height: 48px;
+  }
+
+  .topcontent .btn {
+    height: 70px;
+    width: 350px;
+  }
+
+  .topcontent .btn p {
+    font-size: 22px;
+  }
+
+  .bottomcontent .left .text h6 {
+    font-size: 26px;
+  }
+
+  .bottomcontent .left .text p {
+    font-size: 20px;
+  }
+
+  .bottomcontent .right h3 {
+
+    font-size: 32px;
+  }
+
+  .bottomcontent .right form input {
+    /*text*/
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    letter-spacing: -0.02em;
+
+    /*box*/
+
+    margin: 0px 0px 50px 0px;
+  }
+
+  .bottomcontent .right form .btn {
+    width: 250px;
+    height: 45px;
+  }
+}
+@media only screen and (min-height:1200px){
+
+  .topcontent .heading .headone {
+    font-size: 48px !important;
+    line-height: 48px;
+  }
+
+  .topcontent .heading .headtwo {
+    font-size: 48px !important;
+    line-height: 48px;
+  }
+  .topcontent .btn {
+    height: 70px;
+    width: 350px;
+  }
+  .topcontent .btn p {
+    font-size: 22px;
+  }
+  .bottomcontent .right {
+    padding: 100px 80px;
+  }
+  .bottomcontent .left .text h6 {
+    font-size: 32px;
+  }
+  .bottomcontent .left .text p {
+    font-size: 25px;
+  }
+  .bottomcontent .right h3 {
+    font-size: 32px;
+  }
+  .bottomcontent .left{
+    flex-direction: column;
+    padding: 100px 20px;
+  }
+  .bottomcontent .left .socialicons {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+  .social-icons .icon-box {
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    background-color: white;
+    margin: 5px;
+  }
+  .bottomcontent .left .socialicons .icon-boxez .icon-box a .iconify {
+    font-size: 40px !important;
   }
 }
 
@@ -2344,4 +2529,3 @@ h1:hover:before {
 /*============================================
                          /.CONTACT PAGE
         ==============================================*/
-
