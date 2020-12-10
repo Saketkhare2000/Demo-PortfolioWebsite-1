@@ -1222,9 +1222,7 @@ hr {
   }
 }
 
-/*=======================================================================
-                         CONTACT PAGE PG5
-        ==============================================*/
+/*==================================CONTACT PAGE PG5 ==============================================*/
 .five {
   background-color: rgba(44, 44, 44, 1);
   height: 100vh;
@@ -1273,7 +1271,7 @@ hr {
 .topcontent .heading .headtwo {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 2.9vw;
   line-height: 67px;
   text-align: center;
@@ -1311,7 +1309,7 @@ hr {
 .topcontent .btn:hover {
   background: #00aaaf;
   border: none;
-  transform: scale(1.1);
+  transform: scale(1.05);
 
   /* box-shadow: -3px 0px 7px #bcbcbc, 3px 0px 7px rgba(188, 188, 188, 0.35),
     0px 2px 7px rgba(188, 188, 188, 0.35); */
@@ -1354,7 +1352,7 @@ hr {
   height: fit-content;
   display: flex;
   flex-direction: row;
-  padding: 30px 50px 30px 50px;
+  padding: 30px 50px;
 }
 
 .bottomcontent .left .text {
@@ -1380,7 +1378,7 @@ hr {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 18px;
   text-align: left;
   color: #ffffff;
@@ -1388,11 +1386,47 @@ hr {
 
 .bottomcontent .left .socialicons {
   display: flex;
-  justify-content: space-between;
+  align-self: center;
+  margin-left: auto;
   font-size: 1.5rem;
   color: black;
 }
 
+.social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.social-icons .icon-boxez{
+  display: flex;
+  flex-direction: row;
+}
+.social-icons .icon-box {
+  width: 10vh;
+  height: 10vh;
+  background-color: white;
+  margin: 5px;
+}
+
+.social-icons li {
+  padding: 0rem 0.2rem;
+  text-decoration: none;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.social-icons li a,
+i {
+  color: white;
+  transition: all 0.1s ease;
+}
+
+.social-icons li a,
+i:hover {
+  color: #fff;
+  transform: scale(1.3);
+}
+
+/*=======Right ====*/
 .bottomcontent .right {
   background: white;
   width: 60vw;
@@ -1400,7 +1434,17 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 30px 70px 50px 70px;
+  padding: 30px 70px;
+}
+
+.bottomcontent .right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  justify-self: center !important;
+  align-items: flex-start !important;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .bottomcontent .right h3 {
@@ -1412,7 +1456,7 @@ hr {
   text-align: left;
   letter-spacing: -0.02em;
   color: #4e4e4e;
-  margin: 0px 0px 50px 0px;
+
 }
 
 .bottomcontent .right form input {
@@ -1455,41 +1499,16 @@ hr {
   margin-top: 0px !important;
   transition: all 0.2s ease;
   transform-origin: center;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: translateY(0%);
 }
 
 .bottomcontent .right form .btn:hover {
-  color: black;
   font-weight: bold;
-  transform: scale(1.1);
+  transform: translateY(0%);
+  transform: scale(1.05);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-}
-
-.social-icons {
-  display: flex;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.social-icons li {
-  padding: 0rem 0.2rem;
-  text-decoration: none;
-  list-style: none;
-  justify-content: space-between;
-}
-
-.social-icons li a,
-i {
-  color: white;
-  transition: all 0.1s ease;
-}
-
-.social-icons li a,
-i:hover {
-  color: #fff;
-  transform: scale(1.3);
 }
 
 @media only screen and (max-width: 700px) {
@@ -1733,14 +1752,15 @@ i:hover {
 }
 
 .grad-img {
-  height: 100% ;
+  height: 100%;
   border-radius: 0;
   width: 100%;
 }
-@media only screen and (min-width:680px){
+
+@media only screen and (min-width:680px) {
   .about-right .card-btn {
     display: none;
-  } 
+  }
 }
 
 .about-left .body .card-btn {
@@ -1946,11 +1966,12 @@ i:hover {
 }
 
 @media only screen and (max-width:800px) {
-  .frame{
+  .frame {
     display: flex;
     flex-direction: column;
     height: 90vh;
   }
+
   .about-left .before-line {
     width: 40%;
   }
@@ -1959,22 +1980,26 @@ i:hover {
     width: 90%;
     height: fit-content;
     margin: 0;
-    padding: 0!important;
+    padding: 0 !important;
   }
 
   .about-left .heading {
     align-items: center;
     justify-content: center;
   }
-  .about-left .heading h1{
+
+  .about-left .heading h1 {
     width: fit-content;
   }
-  .before-line{
+
+  .before-line {
     width: 60% !important;
   }
-  .before-line h1{
+
+  .before-line h1 {
     width: fit-content;
   }
+
   .body {
     width: 100% !important;
     align-items: center;
@@ -2011,9 +2036,10 @@ i:hover {
     width: 92% !important;
   }
 
-  .about-left .body .card-btn{
+  .about-left .body .card-btn {
     display: none !important;
   }
+
   .about-right .card-btn {
     /* margin-top: 1rem; */
     position: relative;
@@ -2030,11 +2056,12 @@ i:hover {
     background: #28afb0;
     transition: all 0.2s ease-in-out;
   }
-  
+
   .about-right .card-btn:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     transform: scale(1.05);
   }
+
   .about-left .before-line {
     position: relative;
     display: flex;
