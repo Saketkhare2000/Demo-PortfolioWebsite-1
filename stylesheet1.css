@@ -2012,7 +2012,8 @@ h1:hover:before {
     height: 45px;
   }
 }
-@media only screen and (min-height:1200px){
+
+@media only screen and (min-height:1200px) {
 
   .topcontent .heading .headone {
     font-size: 48px !important;
@@ -2023,33 +2024,42 @@ h1:hover:before {
     font-size: 48px !important;
     line-height: 48px;
   }
+
   .topcontent .btn {
     height: 70px;
     width: 350px;
   }
+
   .topcontent .btn p {
     font-size: 22px;
   }
+
   .bottomcontent .right {
     padding: 100px 80px;
   }
+
   .bottomcontent .left .text h6 {
     font-size: 32px;
   }
+
   .bottomcontent .left .text p {
     font-size: 25px;
   }
+
   .bottomcontent .right h3 {
     font-size: 32px;
   }
-  .bottomcontent .left{
+
+  .bottomcontent .left {
     flex-direction: column;
     padding: 100px 20px;
   }
+
   .bottomcontent .left .socialicons {
     margin-left: 0;
     align-self: flex-start;
   }
+
   .social-icons .icon-box {
     position: relative;
     width: 10vw;
@@ -2057,6 +2067,7 @@ h1:hover:before {
     background-color: white;
     margin: 5px;
   }
+
   .bottomcontent .left .socialicons .icon-boxez .icon-box a .iconify {
     font-size: 40px !important;
   }
@@ -2529,3 +2540,461 @@ h1:hover:before {
 /*============================================
                          /.CONTACT PAGE
         ==============================================*/
+
+
+
+/*______________________________MODAL - ABOUT____________________________________*/
+.Mod {
+  background: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transform: translate(0%, 0%);
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.Mod .modal-dialog-full-width {
+  height: 95vh;
+  width: 80%;
+  margin: 0 !important;
+  position: relative;
+  padding: 0 !important;
+  background-color: black !important;
+  margin-left: 20vw !important;
+}
+
+.Mod .modal-dialog-full-width .modal-content-full-width {
+  height: 100vh;
+  width: 80vw;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative;
+  background: black;
+}
+
+/*____________CLose btn_______________*/
+.Mod .modal-dialog .modal-content .close1 {
+  color: white !important;
+  float: left;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+  text-shadow: none;
+  opacity: 10;
+  outline: 0;
+  width: 50px;
+  margin-left: auto;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+/*______modalbody____________*/
+.modal-bodyz {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  margin: 0px !important;
+  justify-content: center;
+  align-items: center;
+  padding: 0px !important;
+}
+
+
+/*__________firstcol_______________*/
+.modal-bodyz .firstcol {
+  width: 25vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.modal-bodyz .firstcol .img-cover {
+  position: relative;
+  margin-top: 17vh;
+  /* width: 28.85vw;
+  height: 50vh; */
+  width: fit-content;
+  height: fit-content;
+  transform: translateX(50%);
+}
+
+.modal-bodyz .firstcol .img-cover img {
+  height: 100%;
+  width: 100%;
+}
+
+.firstcol h2 {
+  display: none;
+}
+
+/*________secondcol_________*/
+.modal-bodyz .secondcol {
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: black;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.modal-bodyz .secondcol .content {
+  width: 30vw;
+  height: fit-content;
+  margin: 18vh 0% 0% 20%;
+  position: relative;
+}
+
+.modal-bodyz .secondcol .content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 59px;
+  text-align: right;
+  color: #ececec;
+}
+
+.modal-bodyz .secondcol .content p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: right;
+  color: #bbbbbb;
+  margin-top: 10%;
+}
+
+
+
+
+@media only screen and (max-width: 450px) {
+  /*__________firstcol_______________*/
+
+  .firstcol h2{
+    transform: translateY(-85%) !important;
+  }
+  .Mod .modal-dialog .modal-content .firstcol .close1 {
+    font-size: 30px !important;
+    margin-top: 60px !important;
+    padding-right: 1 !important;
+    text-align: right !important;
+  }
+  .Mod .modal-dialog .modal-content .firstcol .close1 {
+    text-align: center;
+    margin-top: 70px;
+    padding-right: 5px;
+    position: relative;
+  }
+
+  /*________secondcol_________*/
+  .modal-bodyz .secondcol {
+    width: 100vw !important;
+    height: 80vh;
+  }
+
+  .modal-bodyz .secondcol .content {
+    width: 100vw !important;
+    height: fit-content;
+    margin: 14vh 0% 0% 0%;
+  }
+
+  .modal-bodyz .secondcol .content h2 {
+    display: none;  
+  }
+
+  .modal-bodyz .secondcol .content p {
+    font-size: 16px !important;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 10%;
+    padding: 40px 0 0 0 !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+
+  /*_________Modal__________*/
+  .Mod {
+    transform: translate(0%, 0%) !important;
+  }
+
+  .Mod .modal-dialog-full-width {
+    height: 100% !important;
+    width: 100% !important;
+    margin-left: 0vw !important;
+  }
+
+  .Mod .modal-dialog-full-width .modal-content-full-width {
+    height: 100vh !important;
+    width: 100vw !important;
+  }
+
+  /*____________CLose btn_______________*/
+  .Mod .modal-dialog .modal-content .secondcol .close1 {
+    display: none;
+  }
+
+  /*______modalbody____________*/
+  .modal-bodyz {
+    width: 100vw !important;
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  /*__________firstcol_______________*/
+  .modal-bodyz .firstcol {
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: flex-start;
+    height: 30vh;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 0 !important;
+  }
+
+  .modal-bodyz .firstcol .img-cover {
+    margin-top: 0 !important;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(0%) !important;
+    transform: translateY(23%) !important;
+  }
+
+  .modal-bodyz .firstcol .img-cover img {
+    text-align: center;
+  }
+
+  .firstcol h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    width: fit-content;
+    /* margin-left: auto; */  
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 26px;
+    padding: 0;
+    text-align: center;
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto !important;
+    display: block !important;
+    transform: translateY(-90%) ;
+    margin-bottom: 0;
+  }
+
+  .Mod .modal-dialog .modal-content .firstcol .close1 {
+    color: rgb(39, 39, 39) !important;
+    float: right;
+    font-size: 35px;
+    margin-top: 50px;
+    padding-right: 5px;
+    /* vertical-align: text-top !important; */
+    text-align: center;
+  }
+
+  /*________secondcol_________*/
+  .modal-bodyz .secondcol {
+    width: 100vw !important;
+    height: 80vh;
+    justify-content: center;
+  align-items: center;  }
+
+  .modal-bodyz .secondcol .content {
+    width: 75vw !important;
+    height: fit-content;
+    margin: 0;
+    justify-self: flex-end !important;
+    justify-content: flex-end;
+  }
+
+  .modal-bodyz .secondcol .content h2 {
+    display: none;
+  }
+
+  .modal-bodyz .secondcol .content p {
+    font-size: 4vw;
+    line-height: 6vh;
+    text-align: center;
+    margin-top: auto !important;
+    padding: 5px 0 0 0 ;
+  }
+}
+
+
+@media only screen and (max-width:989px) {
+  .modal-bodyz .firstcol .img-cover{
+    margin-top: 25vh ;
+  }
+  .modal-bodyz .secondcol .content h2 {
+    font-size: 30px !important;
+  }
+
+  .modal-bodyz .secondcol .content p {
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (max-width:1344px) {
+  .modal-bodyz .firstcol .img-cover{
+    margin-top: 22vh;
+  }
+  .modal-bodyz .secondcol .content {
+    width: 35vw;
+    height: fit-content;
+    /* margin: 15vh 0% 0% 20%; */
+    position: relative;
+  }
+  .modal-bodyz .secondcol .content h2 {
+    font-size: 36px;
+  }
+
+  .modal-bodyz .secondcol .content p {
+    font-size: 18px;
+  }
+}
+
+
+
+@media all and (min-height:900px) {
+  .modal-bodyz .firstcol .img-cover {
+    width: 300px !important;
+    height: 300px !important;
+    transform: translateX(0%) !important;
+    transform: translateY(40%) !important;
+  }
+
+  .firstcol h2{
+    font-size: 44px !important;
+    line-height: 26px;
+  }
+
+  .Mod .modal-dialog .modal-content .firstcol .close1{
+    font-size: 45px !important;
+  }
+
+  .modal-bodyz .secondcol .content p {
+    font-size: 24px !important;
+    margin-top: auto !important;
+  }
+  
+}
+
+@media all and (min-height:1100px) {
+  .modal-bodyz {
+    width: 80vw !important;
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column !important;
+  }
+
+   /*__________firstcol_______________*/
+   .modal-bodyz .firstcol {
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: flex-start;
+    height: 30vh;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 0 !important;
+  }
+  
+  .modal-bodyz .firstcol .img-cover {
+    margin-top: 0 !important;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(0%) !important;
+    transform: translateY(40%) !important;
+  }
+
+  .modal-bodyz .firstcol .img-cover img {
+    text-align: center;
+  }
+
+  .firstcol h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    width: fit-content;
+    /* margin-left: auto; */  
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 26px;
+    padding: 0;
+    text-align: center;
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto !important;
+    display: block !important;
+    transform: translateY(-90%) ;
+    margin-bottom: 0;
+  }
+
+  .Mod .modal-dialog .modal-content .firstcol .close1 {
+    color: rgb(39, 39, 39) !important;
+    float: right;
+    font-size: 35px;
+    margin-top: 50px;
+    padding-right: 5px;
+    /* vertical-align: text-top !important; */
+    text-align: center;
+  }
+
+  /*________secondcol_________*/
+  .modal-bodyz .secondcol {
+    width: 100% !important;
+    height: 80vh;
+    justify-content: center;
+  align-items: center;  }
+
+  .modal-bodyz .secondcol .content {
+    width: 75% !important;
+    height: fit-content;
+    margin: 0;
+    justify-self: flex-end !important;
+    justify-content: flex-end;
+  }
+
+  .modal-bodyz .secondcol .content h2 {
+    display: none;
+  }
+
+  .modal-bodyz .secondcol .content p {
+    font-size: 4vw;
+    line-height: 6vh;
+    text-align: center;
+    margin-top: auto !important;
+    padding: 5px 0 0 0 ;
+  }
+  .modal-bodyz .secondcol .close1{
+    display: none;
+  }
+
+}
+
+
+
+
+
